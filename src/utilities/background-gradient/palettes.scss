@@ -1,0 +1,4 @@
+[variant] {
+  background: var(--app-gradient-#{$value});
+  color: var(--app-color-#{$value}-contrast);
+}

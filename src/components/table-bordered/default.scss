@@ -1,0 +1,23 @@
+[default] {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+
+  tr {
+    margin: 0;
+    padding: 0;
+  }
+  
+  th {
+    font-weight: 700;
+  }
+
+  th, td {
+    padding: .5rem;
+  }
+
+  thead th, th, td {
+    border: 1px solid var(--app-color-medium);
+  }
+}

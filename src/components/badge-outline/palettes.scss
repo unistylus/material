@@ -1,0 +1,9 @@
+[variant] {
+  border-radius: var(--app-size-radius);
+  padding: .25em .5em;
+  font-size: .75em;
+  font-weight: 700;
+  background: none;
+  color: var(--app-color-#{$value});
+  border: 1px solid var(--app-color-#{$value});
+}

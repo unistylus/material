@@ -1,0 +1,23 @@
+[default] {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  padding: .375rem .75rem;
+  background: none;
+  color: var(--app-color-primary);
+
+  & + & {
+    margin-right: .5rem;
+  }
+  
+  &:hover, &:focus, &:active {
+    background: none;
+    text-decoration: underline;
+    color: var(--app-color-primary-shade);
+  }
+
+  &:disabled {
+    color: rgba(var(--app-color-primary), .5);
+    text-decoration: none;
+  }
+}

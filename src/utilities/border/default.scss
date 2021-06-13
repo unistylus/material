@@ -1,0 +1,20 @@
+[default] {
+  border: var(--app-size-border) solid var(--app-color-medium);
+  border-radius: var(--app-size-radius);
+
+  &-ease {
+    border-radius: var(--app-size-radius) !important;
+  }
+
+  &-pill {
+    border-radius: 1000px !important;
+  }
+  
+  &-sharp {
+    border-radius: 0 !important;
+  }
+
+  &-none {
+    border: none !important;
+  }
+}

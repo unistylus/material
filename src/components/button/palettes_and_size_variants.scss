@@ -1,0 +1,31 @@
+[variant] {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-#{$value1});
+  color: var(--app-color-#{$value1}-contrast);
+  padding: (.375rem * #{$value2}) (.75rem * #{$value2});
+  font-size: calc(#{$value2} * var(--app-size-font));
+
+  & + & {
+    margin-right: .5rem;
+  }
+  
+  &:hover, &:focus, &:active {
+    outline: 0;
+    background: var(--app-color-#{$value1}-shade);
+    color: var(--app-color-#{$value1}-contrast);
+    text-decoration: none;
+  }
+
+  &:focus, &:active {
+    box-shadow: 0 0 0 .25rem rgba(var(--app-color-#{$value1}-rgb), .3);
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: rgba(var(--app-color-#{$value1}-rgb), .5);
+    color: rgba(var(--app-color-#{$value1}-contrast-rgb), .5);
+    box-shadow: none;
+  }
+}

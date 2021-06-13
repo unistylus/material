@@ -1,0 +1,38 @@
+{
+  "name": "@lamnhan/unistylus-material",
+  "version": "0.0.1",
+  "description": "The Unistylus Material soul.",
+  "author": "Lam Nhan",
+  "homepage": "https://unistylus.lamnhan.com",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "theming",
+    "angular"
+  ],
+  "scripts": {
+    "scss": "unistylus generate --api",
+    "scss-copy": "cpy package.json README.md LICENSE dist/material",
+    "css": "unistylus clean dist/material-css && sass dist/material:dist/material-css",
+    "css-copy": "cpy package-css.json dist/material-css --rename=package.json && cpy README.md LICENSE dist/material-css",
+    "css-min": "cleancss -O2 --source-map --batch --batch-suffix .min -o dist/material-css dist/material-css/**/*.css",
+    "build": "npm run scss && npm run scss-copy && npm run css && npm run css-min && npm run css-copy",
+    "deploy:scss": "cd dist/material && npm publish && cd ../../",
+    "deploy:css": "cd dist/material-css && npm publish && cd ../../",
+    "deploy": "npm run deploy:scss && npm run deploy:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lamnhan/unistylus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lamnhan/unistylus/issues"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.3.0",
+    "cpy-cli": "^3.1.1",
+    "sass": "^1.34.1"
+  }
+}

@@ -1,0 +1,126 @@
+[default] {
+  z-index: 0;
+  position: relative;
+  display: inline-block;
+  color: var(--app-color-medium);
+  font-size: 16px;
+  line-height: 1.5;
+
+  /* Input */
+  & > input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    right: 6px;
+    top: -8px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--app-color-medium);
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+    pointer-events: none;
+    transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+  }
+
+  /* Span */
+  & > span {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  /* Track */
+  & > span::before {
+    content: "";
+    float: right;
+    margin: 5px 0 5px 10px;
+    border-radius: 7px;
+    width: 36px;
+    height: 14px;
+    background-color: var(--app-color-medium);
+    vertical-align: top;
+    transition: background-color 0.2s, opacity 0.2s;
+  }
+
+  /* Thumb */
+  & > span::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--app-color-background-shade);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: background-color 0.2s, transform 0.2s;
+  }
+
+  /* Checked */
+  & > input:checked {
+    right: -10px;
+    background-color: var(--app-color-primary-shade);
+  }
+
+  & > input:checked + span::before {
+    background-color: var(--app-color-primary);
+  }
+
+  & > input:checked + span::after {
+    background-color: var(--app-color-primary-tint);
+    transform: translateX(16px);
+  }
+
+  /* Hover, Focus */
+  &:hover > input {
+    opacity: 0.04;
+  }
+
+  & > input:focus {
+    opacity: 0.12;
+  }
+
+  &:hover > input:focus {
+    opacity: 0.16;
+  }
+
+  /* Active */
+  & > input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+  }
+
+  & > input:active + span::before {
+    background-color: var(--app-color-primary);
+  }
+
+  & > input:checked:active + span::before {
+    background-color: var(--app-color-primary);
+  }
+
+  /* Disabled */
+  & > input:disabled {
+    opacity: 0;
+  }
+
+  & > input:disabled + span {
+    color: var(--app-color-medium);
+    opacity: 0.38;
+    cursor: default;
+  }
+
+  & > input:disabled + span::before {
+    background-color: var(--app-color-medium);
+  }
+
+  & > input:checked:disabled + span::before {
+    background-color: var(--app-color-medium);
+  }
+}

@@ -1,0 +1,32 @@
+[default] {
+  display: block;
+  width: 100%;
+  padding: .5rem .25rem;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+  border: none;
+  border-bottom: var(--app-size-border) solid var(--app-color-medium);
+
+  & + & {
+    margin-top: 1rem;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: var(--app-color-foreground);
+  }
+
+  &:disabled, &[readonly] {
+    opacity: 1;
+    background: var(--app-color-background-shade);
+    border-color: var(--app-color-medium);
+  }
+
+  &[type=file] {
+    overflow: hidden;
+
+    &:not(:disabled):not([readonly]) {
+      cursor: pointer;
+    }
+  }
+}

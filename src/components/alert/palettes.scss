@@ -1,0 +1,16 @@
+[variant] {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1rem;
+  border-radius: var(--app-size-radius);
+  font-weight: 500;
+  background: rgba(var(--app-color-#{$value}-rgb), .3);
+  color: var(--app-color-#{$value}-shade);
+  border: var(--app-size-border) solid var(--app-color-#{$value});
+  
+  em {
+    display: block;
+    flex: 1;
+  }
+}

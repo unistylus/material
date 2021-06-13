@@ -1,0 +1,46 @@
+[default] {
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+
+  .item {
+
+    a {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding: .75rem;
+      border-bottom: 1px solid var(--app-color-background-shade);
+      color: var(--app-color-foreground);
+
+      &:hover, &:focus, &:active {
+        background: var(--app-color-background-shade);
+        color: var(--app-color-foreground-shade);
+        text-decoration: none;
+      }
+
+      &.active {
+        background: var(--app-color-background-shade);
+        font-weight: 700;
+      }
+  
+      .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+  
+      span {
+        flex: 1;
+        margin-left: 1rem;
+      }
+    }
+
+    &:first-child {
+
+      a {
+        border-top: 1px solid var(--app-color-background-shade);
+      }
+    }
+  }
+}

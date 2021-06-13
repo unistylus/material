@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    ".vscode/": true,
+    "dist/": true,
+    "**/*.css": true,
+    "**/*.css.map": true,
+  },
+  "liveSassCompile.settings.excludeList": [
+    "src/**",
+    "dist/**"
+  ]
+}

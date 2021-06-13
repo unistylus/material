@@ -1,0 +1,24 @@
+[variant] {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-#{$value});
+  color: var(--app-color-#{$value}-contrast);
+
+  tr {
+    margin: 0;
+    padding: 0;
+  }
+  
+  th {
+    font-weight: 700;
+  }
+
+  th, td {
+    padding: .5rem;
+    border-bottom: 1px solid var(--app-color-#{$value}-tint);
+  }
+
+  thead th {
+    border-bottom: 1px solid var(--app-color-#{$value}-shade);
+  }
+}

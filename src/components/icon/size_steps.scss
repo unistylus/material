@@ -1,0 +1,9 @@
+[variant] {
+  display: inline-block;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: #{$value}rem;
+  height: #{$value}rem;
+}
