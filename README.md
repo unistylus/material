@@ -7,21 +7,25 @@ Homepage: [https://unistylus.lamnhan.com](https://unistylus.lamnhan.com)
 - Install SCSS:
 
 ```sh
-npm install --save @lamnhan/unistylus-material
+npm install --save @unistylus/material
 ```
 
 Use SCSS:
 
 ```scss
-@import '@lamnhan/unistylus-material/full';
+@import '@unistylus/material/reset';
+@import '@unistylus/material/core';
+@import '@unistylus/material/...';
 ```
 
 - Use CSS from a CDN:
 
 ```html
-https://unpkg.com/@lamnhan/unistylus-material-css@latest/full.css
+https://unpkg.com/@unistylus/material-css@latest/reset.min.css
+https://unpkg.com/@unistylus/material-css@latest/core.min.css
+https://unpkg.com/@unistylus/material-css@latest/...min.css
 ```
 
 ### License
 
-**@lamnhan/unistylus-material** and **@lamnhan/unistylus-material-css** are released under the [MIT](https://github.com/lamnhan/unistylus-material/blob/master/LICENSE) license.
+**@unistylus/material** and **@unistylus/material-css** are released under the [MIT](https://github.com/unistylus/material/blob/master/LICENSE) license.

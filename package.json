@@ -1,5 +1,5 @@
 {
-  "name": "@lamnhan/unistylus-material",
+  "name": "@unistylus/material",
   "version": "0.0.1",
   "description": "The Unistylus Material soul.",
   "author": "Lam Nhan",
@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lamnhan/unistylus.git"
+    "url": "https://github.com/unistylus/material.git"
   },
   "bugs": {
-    "url": "https://github.com/lamnhan/unistylus/issues"
+    "url": "https://github.com/unistylus/material/issues"
   },
   "devDependencies": {
     "clean-css-cli": "^5.3.0",
