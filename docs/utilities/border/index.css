@@ -1,0 +1,16 @@
+.border {
+  border: var(--app-size-border) solid var(--app-color-medium);
+  border-radius: var(--app-size-radius);
+}
+.border-ease {
+  border-radius: var(--app-size-radius) !important;
+}
+.border-pill {
+  border-radius: 1000px !important;
+}
+.border-sharp {
+  border-radius: 0 !important;
+}
+.border-none {
+  border: none !important;
+}

@@ -1,0 +1,20 @@
+.table-success {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-success);
+  color: var(--app-color-success-contrast);
+}
+.table-success tr {
+  margin: 0;
+  padding: 0;
+}
+.table-success th {
+  font-weight: 700;
+}
+.table-success th, .table-success td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-success-tint);
+}
+.table-success thead th {
+  border-bottom: 1px solid var(--app-color-success-shade);
+}

@@ -1,0 +1,29 @@
+.button-outline-success-xl {
+  display: inline-block;
+  border-radius: var(--app-size-radius);
+  background: none;
+  border: var(--app-size-border) solid var(--app-color-success);
+  color: var(--app-color-success);
+  padding: 1.40625rem 2.8125rem;
+  font-size: calc(3.75 * var(--app-size-font));
+}
+.button-outline-success-xl + .button-outline-success-xl {
+  margin-right: 0.5rem;
+}
+.button-outline-success-xl:hover, .button-outline-success-xl:focus, .button-outline-success-xl:active {
+  outline: 0;
+  background: var(--app-color-success);
+  border: var(--app-size-border) solid var(--app-color-success);
+  color: var(--app-color-success-contrast);
+  text-decoration: none;
+}
+.button-outline-success-xl:focus, .button-outline-success-xl:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-success-rgb), 0.3);
+}
+.button-outline-success-xl:disabled {
+  opacity: 1;
+  border: var(--app-size-border) solid rgba(var(--app-color-success-rgb), 0.5);
+  color: rgba(var(--app-color-success-rgb), 0.5);
+  box-shadow: none;
+  background: none;
+}

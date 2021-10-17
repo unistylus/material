@@ -1,0 +1,8 @@
+[default] {
+  border: none;
+  border-radius: var(--app-size-radius);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75em;
+  background: var(--app-color-background);
+  color: var(--app-color-background-contrast);
+}

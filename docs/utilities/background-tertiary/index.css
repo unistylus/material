@@ -1,0 +1,4 @@
+.background-tertiary {
+  background: var(--app-color-tertiary);
+  color: var(--app-color-tertiary-contrast);
+}

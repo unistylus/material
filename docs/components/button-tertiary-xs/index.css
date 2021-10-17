@@ -1,0 +1,27 @@
+.button-tertiary-xs {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-tertiary);
+  color: var(--app-color-tertiary-contrast);
+  padding: 0.0234375rem 0.046875rem;
+  font-size: calc(0.0625 * var(--app-size-font));
+}
+.button-tertiary-xs + .button-tertiary-xs {
+  margin-right: 0.5rem;
+}
+.button-tertiary-xs:hover, .button-tertiary-xs:focus, .button-tertiary-xs:active {
+  outline: 0;
+  background: var(--app-color-tertiary-shade);
+  color: var(--app-color-tertiary-contrast);
+  text-decoration: none;
+}
+.button-tertiary-xs:focus, .button-tertiary-xs:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-tertiary-rgb), 0.3);
+}
+.button-tertiary-xs:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-tertiary-rgb), 0.5);
+  color: rgba(var(--app-color-tertiary-contrast-rgb), 0.5);
+  box-shadow: none;
+}

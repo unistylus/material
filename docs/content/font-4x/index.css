@@ -1,0 +1,3 @@
+.font-4x {
+  font-size: calc(4 * var(--app-size-font));
+}

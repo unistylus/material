@@ -1,0 +1,4 @@
+.background-gradient-background {
+  background: var(--app-gradient-background);
+  color: var(--app-color-background-contrast);
+}

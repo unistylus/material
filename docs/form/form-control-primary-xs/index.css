@@ -1,0 +1,28 @@
+.form-control-primary-xs {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+  background: var(--app-color-background);
+  color: var(--app-color-primary);
+  border-bottom: var(--app-size-border) solid var(--app-color-primary);
+  padding: 0.03125rem 0.015625rem;
+  font-size: calc(0.0625 * var(--app-size-font));
+}
+.form-control-primary-xs + .form-control-primary-xs {
+  margin-top: 1rem;
+}
+.form-control-primary-xs:focus {
+  outline: 0;
+  border-color: var(--app-color-primary-shade);
+}
+.form-control-primary-xs:disabled, .form-control-primary-xs[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-primary-xs[type=file] {
+  overflow: hidden;
+}
+.form-control-primary-xs[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

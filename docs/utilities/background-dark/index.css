@@ -1,0 +1,4 @@
+.background-dark {
+  background: var(--app-color-dark);
+  color: var(--app-color-dark-contrast);
+}

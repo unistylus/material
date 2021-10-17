@@ -1,0 +1,4 @@
+.background-gradient-tertiary {
+  background: var(--app-gradient-tertiary);
+  color: var(--app-color-tertiary-contrast);
+}

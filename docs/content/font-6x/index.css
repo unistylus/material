@@ -1,0 +1,3 @@
+.font-6x {
+  font-size: calc(6 * var(--app-size-font));
+}

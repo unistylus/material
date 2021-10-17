@@ -1,0 +1,4 @@
+.background-medium {
+  background: var(--app-color-medium);
+  color: var(--app-color-medium-contrast);
+}

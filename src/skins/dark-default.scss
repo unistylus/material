@@ -1,0 +1,7 @@
+@import './properties/dark';
+
+:root,
+[data-theme="default"],
+[data-theme="dark"] {
+  @include dark-properties;
+}

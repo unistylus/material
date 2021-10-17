@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build:lib",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: build:lib",
+			"detail": "npm run scss && npm run scss-copy && npm run skins && npm run css && npm run css-min && npm run css-copy && npm run js && npm run js-copy"
+		},
+		{
+			"type": "npm",
+			"script": "deploy:lib",
+			"problemMatcher": [],
+			"label": "npm: deploy:lib",
+			"detail": "npm run deploy:scss && npm run deploy:css && npm run deploy:js"
+		},
+		{
+			"type": "npm",
+			"script": "build:app",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build:app",
+			"detail": "unistylus build --api"
+		},
+		{
+			"type": "npm",
+			"script": "deploy:app",
+			"problemMatcher": [],
+			"label": "npm: deploy:app",
+			"detail": "git add . && git commit -m 'deploy:app' && git push"
+		}
+	]
+}

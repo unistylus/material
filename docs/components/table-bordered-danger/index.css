@@ -1,0 +1,19 @@
+.table-bordered-danger {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table-bordered-danger tr {
+  margin: 0;
+  padding: 0;
+}
+.table-bordered-danger th {
+  font-weight: 700;
+}
+.table-bordered-danger th, .table-bordered-danger td {
+  padding: 0.5rem;
+}
+.table-bordered-danger thead th, .table-bordered-danger th, .table-bordered-danger td {
+  border: 1px solid var(--app-color-danger);
+}

@@ -1,0 +1,4 @@
+.border-dark {
+  border: var(--app-size-border) solid var(--app-color-dark);
+  border-radius: var(--app-size-radius);
+}

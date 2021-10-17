@@ -1,0 +1,20 @@
+.button-link {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  padding: 0.375rem 0.75rem;
+  background: none;
+  color: var(--app-color-primary);
+}
+.button-link + .button-link {
+  margin-right: 0.5rem;
+}
+.button-link:hover, .button-link:focus, .button-link:active {
+  background: none;
+  text-decoration: underline;
+  color: var(--app-color-primary-shade);
+}
+.button-link:disabled {
+  color: rgba(var(--app-color-primary), 0.5);
+  text-decoration: none;
+}

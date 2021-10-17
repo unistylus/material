@@ -1,0 +1,20 @@
+.table-secondary {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-secondary);
+  color: var(--app-color-secondary-contrast);
+}
+.table-secondary tr {
+  margin: 0;
+  padding: 0;
+}
+.table-secondary th {
+  font-weight: 700;
+}
+.table-secondary th, .table-secondary td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-secondary-tint);
+}
+.table-secondary thead th {
+  border-bottom: 1px solid var(--app-color-secondary-shade);
+}

@@ -1,0 +1,20 @@
+.table {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table tr {
+  margin: 0;
+  padding: 0;
+}
+.table th {
+  font-weight: 700;
+}
+.table th, .table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}

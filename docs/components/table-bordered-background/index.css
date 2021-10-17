@@ -1,0 +1,19 @@
+.table-bordered-background {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table-bordered-background tr {
+  margin: 0;
+  padding: 0;
+}
+.table-bordered-background th {
+  font-weight: 700;
+}
+.table-bordered-background th, .table-bordered-background td {
+  padding: 0.5rem;
+}
+.table-bordered-background thead th, .table-bordered-background th, .table-bordered-background td {
+  border: 1px solid var(--app-color-background);
+}

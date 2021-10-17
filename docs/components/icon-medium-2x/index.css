@@ -1,0 +1,10 @@
+.icon-medium-2x {
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  filter: var(--app-recolor-medium);
+}

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://unistylus.lamnhan.com/favicon.ico">
+  <title>Unistylus: @unistylus/material/form/form-control-primary-lg</title>
+  <meta name="description" content="The Unistylus Material collection">
+  <!-- All skins -->
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/skins/light-default.css">
+<link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/skins/dark.css">
+  <!-- Basic style -->
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/core.css">
+  <!-- Global style -->
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.7/assets/styles/index.css">
+  <!-- Main style -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  
+<header class="uw_global-header">
+  <div class="brand">
+    <a href="/">@unistylus/material</a>
+  </div>
+  <div class="skins">
+    <select id="skin-selector">
+      <option value="0" disabled>Select a skin</option>
+      <option value="light">Light</option>
+<option value="dark">Dark</option>
+    </select>
+  </div>
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="https://github.com/unistylus/material" target="_blank">Github</a>
+  </nav>
+</header>
+    
+
+  <main class="uw_global-major">
+    
+<section class="section preview">
+  <div class="head">Preview</div>
+  <div class="body">
+    <div class="inner">
+<form>
+  <input class="form-control-primary-lg" type="text" placeholder="An input ...">
+  <input class="form-control-primary-lg" type="file">
+  <textarea class="form-control-primary-lg" rows="3" placeholder="A textarea ..."></textarea>
+  <input class="form-control-primary-lg" list="datalistOptions" placeholder="A datalist ...">
+  <datalist id="datalistOptions">
+    <option value="San Francisco">
+    <option value="New York">
+    <option value="Seattle">
+    <option value="Los Angeles">
+    <option value="Chicago">
+  </datalist>
+</form>
+
+<form class="margin-top-2x">
+  <input class="form-control-primary-lg" type="text" placeholder="An disabled input ..." disabled>
+  <input class="form-control-primary-lg" type="text" placeholder="An readonly input ..." readonly>
+  <input class="form-control-primary-lg" type="file" disabled>
+  <textarea class="form-control-primary-lg" rows="3" placeholder="A disabled textarea ..." disabled></textarea>
+  <input class="form-control-primary-lg" list="datalistOptions" placeholder="A disabled datalist ..." disabled>
+</form>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="head">Usage</div>
+  <div class="body">
+    <ul>
+<li>Step 1: <strong>Import the style</strong></li>
+</ul>
+<p>Using the CLI:</p>
+<pre><code class="language-bash">unistylus <span class="token function">add</span> <span class="token string">"form/form-control-primary-lg"</span>
+</code></pre>
+<p>Or, include SCSS:</p>
+<pre><code class="language-scss"><span class="token keyword">@import</span> <span class="token string">'@unistylus/material/form/form-control-primary-lg'</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Or, include CSS:</p>
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@unistylus/material-css@0.0.2/form/form-control-primary-lg.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+</code></pre>
+<ul>
+<li>Step 2: <strong>Use the class</strong></li>
+</ul>
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control-primary-lg<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>An input ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control-primary-lg<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>file<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control-primary-lg<span class="token punctuation">"</span></span> <span class="token attr-name">rows</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>3<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>A textarea ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control-primary-lg<span class="token punctuation">"</span></span> <span class="token attr-name">list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>datalistOptions<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>A datalist ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>datalist</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>datalistOptions<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>San Francisco<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>New York<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Seattle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Los Angeles<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Chicago<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>datalist</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>margin-top-2x<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control-primary-lg<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>An disabled input ...<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control-primary-lg<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>An readonly input ...<span class="token punctuation">"</span></span> <span class="token attr-name">readonly</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control-primary-lg<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>file<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control-primary-lg<span class="token punctuation">"</span></span> <span class="token attr-name">rows</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>3<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>A disabled textarea ...<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-control-primary-lg<span class="token punctuation">"</span></span> <span class="token attr-name">list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>datalistOptions<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>A disabled datalist ...<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+</code></pre>
+
+  </div>
+</section>
+    
+  </main>
+  
+  
+<footer class="uw_global-footer">
+  <div class="text">Developed by <a href="https://unistylus.lamnhan.com" target="_blank">Lam Nhan</a> with 💖. Powered by <a href="https://unistylus.lamnhan.com" target="_blank">Unistylus</a>.</div>
+  <ul class="links">
+  <li><a href="https://lamnhan.com" target="_blank">Lam Nhan</a></li>
+  <li><a href="https://unistylus.lamnhan.com/collections" target="_blank">More like this?</a></li>
+  </ul>
+</footer>
+    
+
+  <!-- Global script -->
+  <script src="https://unpkg.com/@unistylus/cli@0.0.7/assets/scripts/index.js"></script>
+  <!-- Main script -->
+  <script src="index.js"></script>
+</body>
+</html>
+    

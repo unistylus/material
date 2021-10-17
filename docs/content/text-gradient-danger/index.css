@@ -1,0 +1,6 @@
+.text-gradient-danger {
+  background: var(--app-gradient-danger);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

@@ -1,0 +1,6 @@
+.image {
+  border-radius: var(--app-size-radius);
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}

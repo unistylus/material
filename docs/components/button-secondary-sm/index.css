@@ -1,0 +1,27 @@
+.button-secondary-sm {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-secondary);
+  color: var(--app-color-secondary-contrast);
+  padding: 0.28125rem 0.5625rem;
+  font-size: calc(0.75 * var(--app-size-font));
+}
+.button-secondary-sm + .button-secondary-sm {
+  margin-right: 0.5rem;
+}
+.button-secondary-sm:hover, .button-secondary-sm:focus, .button-secondary-sm:active {
+  outline: 0;
+  background: var(--app-color-secondary-shade);
+  color: var(--app-color-secondary-contrast);
+  text-decoration: none;
+}
+.button-secondary-sm:focus, .button-secondary-sm:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-secondary-rgb), 0.3);
+}
+.button-secondary-sm:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-secondary-rgb), 0.5);
+  color: rgba(var(--app-color-secondary-contrast-rgb), 0.5);
+  box-shadow: none;
+}

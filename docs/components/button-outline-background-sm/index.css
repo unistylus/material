@@ -1,0 +1,29 @@
+.button-outline-background-sm {
+  display: inline-block;
+  border-radius: var(--app-size-radius);
+  background: none;
+  border: var(--app-size-border) solid var(--app-color-background);
+  color: var(--app-color-background);
+  padding: 0.28125rem 0.5625rem;
+  font-size: calc(0.75 * var(--app-size-font));
+}
+.button-outline-background-sm + .button-outline-background-sm {
+  margin-right: 0.5rem;
+}
+.button-outline-background-sm:hover, .button-outline-background-sm:focus, .button-outline-background-sm:active {
+  outline: 0;
+  background: var(--app-color-background);
+  border: var(--app-size-border) solid var(--app-color-background);
+  color: var(--app-color-background-contrast);
+  text-decoration: none;
+}
+.button-outline-background-sm:focus, .button-outline-background-sm:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-background-rgb), 0.3);
+}
+.button-outline-background-sm:disabled {
+  opacity: 1;
+  border: var(--app-size-border) solid rgba(var(--app-color-background-rgb), 0.5);
+  color: rgba(var(--app-color-background-rgb), 0.5);
+  box-shadow: none;
+  background: none;
+}

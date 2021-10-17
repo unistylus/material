@@ -1,0 +1,26 @@
+.table-striped-secondary {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-secondary-contrast);
+}
+.table-striped-secondary tr {
+  margin: 0;
+  padding: 0;
+}
+.table-striped-secondary th {
+  font-weight: 700;
+}
+.table-striped-secondary th, .table-striped-secondary td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-striped-secondary thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-striped-secondary thead tr, .table-striped-secondary tbody tr:nth-of-type(even) {
+  background: var(--app-color-secondary);
+}
+.table-striped-secondary tbody tr:nth-of-type(odd) {
+  background: var(--app-color-secondary-shade);
+}

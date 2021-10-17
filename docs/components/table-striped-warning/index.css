@@ -1,0 +1,26 @@
+.table-striped-warning {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-warning-contrast);
+}
+.table-striped-warning tr {
+  margin: 0;
+  padding: 0;
+}
+.table-striped-warning th {
+  font-weight: 700;
+}
+.table-striped-warning th, .table-striped-warning td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-striped-warning thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-striped-warning thead tr, .table-striped-warning tbody tr:nth-of-type(even) {
+  background: var(--app-color-warning);
+}
+.table-striped-warning tbody tr:nth-of-type(odd) {
+  background: var(--app-color-warning-shade);
+}

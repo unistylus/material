@@ -1,0 +1,4 @@
+.border-warning {
+  border: var(--app-size-border) solid var(--app-color-warning);
+  border-radius: var(--app-size-radius);
+}

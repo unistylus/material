@@ -1,0 +1,4 @@
+.background-danger {
+  background: var(--app-color-danger);
+  color: var(--app-color-danger-contrast);
+}

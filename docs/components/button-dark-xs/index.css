@@ -1,0 +1,27 @@
+.button-dark-xs {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-dark);
+  color: var(--app-color-dark-contrast);
+  padding: 0.0234375rem 0.046875rem;
+  font-size: calc(0.0625 * var(--app-size-font));
+}
+.button-dark-xs + .button-dark-xs {
+  margin-right: 0.5rem;
+}
+.button-dark-xs:hover, .button-dark-xs:focus, .button-dark-xs:active {
+  outline: 0;
+  background: var(--app-color-dark-shade);
+  color: var(--app-color-dark-contrast);
+  text-decoration: none;
+}
+.button-dark-xs:focus, .button-dark-xs:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-dark-rgb), 0.3);
+}
+.button-dark-xs:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-dark-rgb), 0.5);
+  color: rgba(var(--app-color-dark-contrast-rgb), 0.5);
+  box-shadow: none;
+}

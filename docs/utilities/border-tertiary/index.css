@@ -1,0 +1,4 @@
+.border-tertiary {
+  border: var(--app-size-border) solid var(--app-color-tertiary);
+  border-radius: var(--app-size-radius);
+}

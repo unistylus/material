@@ -1,0 +1,4 @@
+.background-gradient-medium {
+  background: var(--app-gradient-medium);
+  color: var(--app-color-medium-contrast);
+}

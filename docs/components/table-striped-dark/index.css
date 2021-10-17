@@ -1,0 +1,26 @@
+.table-striped-dark {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-dark-contrast);
+}
+.table-striped-dark tr {
+  margin: 0;
+  padding: 0;
+}
+.table-striped-dark th {
+  font-weight: 700;
+}
+.table-striped-dark th, .table-striped-dark td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-striped-dark thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-striped-dark thead tr, .table-striped-dark tbody tr:nth-of-type(even) {
+  background: var(--app-color-dark);
+}
+.table-striped-dark tbody tr:nth-of-type(odd) {
+  background: var(--app-color-dark-shade);
+}

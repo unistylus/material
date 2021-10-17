@@ -1,0 +1,27 @@
+.button-warning-xl {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-warning);
+  color: var(--app-color-warning-contrast);
+  padding: 1.40625rem 2.8125rem;
+  font-size: calc(3.75 * var(--app-size-font));
+}
+.button-warning-xl + .button-warning-xl {
+  margin-right: 0.5rem;
+}
+.button-warning-xl:hover, .button-warning-xl:focus, .button-warning-xl:active {
+  outline: 0;
+  background: var(--app-color-warning-shade);
+  color: var(--app-color-warning-contrast);
+  text-decoration: none;
+}
+.button-warning-xl:focus, .button-warning-xl:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-warning-rgb), 0.3);
+}
+.button-warning-xl:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-warning-rgb), 0.5);
+  color: rgba(var(--app-color-warning-contrast-rgb), 0.5);
+  box-shadow: none;
+}

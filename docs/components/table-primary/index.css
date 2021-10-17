@@ -1,0 +1,20 @@
+.table-primary {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-primary);
+  color: var(--app-color-primary-contrast);
+}
+.table-primary tr {
+  margin: 0;
+  padding: 0;
+}
+.table-primary th {
+  font-weight: 700;
+}
+.table-primary th, .table-primary td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-primary-tint);
+}
+.table-primary thead th {
+  border-bottom: 1px solid var(--app-color-primary-shade);
+}

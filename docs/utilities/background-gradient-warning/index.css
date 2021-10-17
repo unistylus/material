@@ -1,0 +1,4 @@
+.background-gradient-warning {
+  background: var(--app-gradient-warning);
+  color: var(--app-color-warning-contrast);
+}

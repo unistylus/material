@@ -1,0 +1,20 @@
+.table-borderless-danger {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+  border: 1px solid var(--app-color-danger);
+}
+.table-borderless-danger tr {
+  margin: 0;
+  padding: 0;
+}
+.table-borderless-danger th {
+  font-weight: 700;
+}
+.table-borderless-danger th, .table-borderless-danger td {
+  padding: 0.5rem;
+}
+.table-borderless-danger thead th, .table-borderless-danger th, .table-borderless-danger td {
+  border: none !important;
+}

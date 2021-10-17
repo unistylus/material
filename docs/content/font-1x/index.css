@@ -1,0 +1,3 @@
+.font-1x {
+  font-size: calc(1 * var(--app-size-font));
+}

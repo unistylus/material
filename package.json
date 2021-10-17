@@ -1,7 +1,7 @@
 {
   "name": "@unistylus/material",
-  "version": "0.0.1",
-  "description": "The Unistylus Material soul.",
+  "version": "0.0.2",
+  "description": "The Unistylus Material collection",
   "author": "Lam Nhan",
   "homepage": "https://unistylus.lamnhan.com",
   "license": "MIT",
@@ -13,15 +13,21 @@
     "angular"
   ],
   "scripts": {
-    "scss": "unistylus generate --api",
+    "scss": "unistylus generate",
     "scss-copy": "cpy package.json README.md LICENSE dist/material",
-    "css": "unistylus clean dist/material-css && sass dist/material:dist/material-css",
+    "css": "unistylus clean dist/material-css && sass --load-path=node_modules dist/material:dist/material-css",
     "css-copy": "cpy package-css.json dist/material-css --rename=package.json && cpy README.md LICENSE dist/material-css",
     "css-min": "cleancss -O2 --source-map --batch --batch-suffix .min -o dist/material-css dist/material-css/**/*.css",
-    "build": "npm run scss && npm run scss-copy && npm run css && npm run css-min && npm run css-copy",
+    "js": "unistylus js",
+    "js-copy": "cpy package-js.json dist/material-js --rename=package.json && cpy README.md LICENSE dist/material-js",
+    "skins": "unistylus copy skins --src src --out dist/material",
+    "build:lib": "npm run scss && npm run scss-copy && npm run skins && npm run css && npm run css-min && npm run css-copy && npm run js && npm run js-copy",
     "deploy:scss": "cd dist/material && npm publish && cd ../../",
     "deploy:css": "cd dist/material-css && npm publish && cd ../../",
-    "deploy": "npm run deploy:scss && npm run deploy:css"
+    "deploy:js": "cd dist/material-js && npm publish && cd ../../",
+    "deploy:lib": "npm run deploy:scss && npm run deploy:css && npm run deploy:js",
+    "build:app": "unistylus build --api",
+    "deploy:app": "git add . && git commit -m 'deploy:app' && git push"
   },
   "repository": {
     "type": "git",
@@ -30,9 +36,15 @@
   "bugs": {
     "url": "https://github.com/unistylus/material/issues"
   },
+  "dependencies": {
+    "@unistylus/core": "0.0.10"
+  },
   "devDependencies": {
+    "@unistylus/cli": "0.0.7",
     "clean-css-cli": "^5.3.0",
     "cpy-cli": "^3.1.1",
-    "sass": "^1.34.1"
+    "gts": "^3.1.0",
+    "sass": "^1.34.1",
+    "typescript": "^4.4.3"
   }
 }

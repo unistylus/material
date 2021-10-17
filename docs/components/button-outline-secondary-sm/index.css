@@ -1,0 +1,29 @@
+.button-outline-secondary-sm {
+  display: inline-block;
+  border-radius: var(--app-size-radius);
+  background: none;
+  border: var(--app-size-border) solid var(--app-color-secondary);
+  color: var(--app-color-secondary);
+  padding: 0.28125rem 0.5625rem;
+  font-size: calc(0.75 * var(--app-size-font));
+}
+.button-outline-secondary-sm + .button-outline-secondary-sm {
+  margin-right: 0.5rem;
+}
+.button-outline-secondary-sm:hover, .button-outline-secondary-sm:focus, .button-outline-secondary-sm:active {
+  outline: 0;
+  background: var(--app-color-secondary);
+  border: var(--app-size-border) solid var(--app-color-secondary);
+  color: var(--app-color-secondary-contrast);
+  text-decoration: none;
+}
+.button-outline-secondary-sm:focus, .button-outline-secondary-sm:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-secondary-rgb), 0.3);
+}
+.button-outline-secondary-sm:disabled {
+  opacity: 1;
+  border: var(--app-size-border) solid rgba(var(--app-color-secondary-rgb), 0.5);
+  color: rgba(var(--app-color-secondary-rgb), 0.5);
+  box-shadow: none;
+  background: none;
+}

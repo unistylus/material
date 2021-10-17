@@ -1,0 +1,4 @@
+.background-gradient-success {
+  background: var(--app-gradient-success);
+  color: var(--app-color-success-contrast);
+}

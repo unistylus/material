@@ -1,0 +1,27 @@
+.button-background-lg {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-background);
+  color: var(--app-color-background-contrast);
+  padding: 0.5625rem 1.125rem;
+  font-size: calc(1.5 * var(--app-size-font));
+}
+.button-background-lg + .button-background-lg {
+  margin-right: 0.5rem;
+}
+.button-background-lg:hover, .button-background-lg:focus, .button-background-lg:active {
+  outline: 0;
+  background: var(--app-color-background-shade);
+  color: var(--app-color-background-contrast);
+  text-decoration: none;
+}
+.button-background-lg:focus, .button-background-lg:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-background-rgb), 0.3);
+}
+.button-background-lg:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-background-rgb), 0.5);
+  color: rgba(var(--app-color-background-contrast-rgb), 0.5);
+  box-shadow: none;
+}

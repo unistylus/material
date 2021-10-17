@@ -1,0 +1,26 @@
+.form-control-primary {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+  background: var(--app-color-background);
+  color: var(--app-color-primary);
+  border-bottom: var(--app-size-border) solid var(--app-color-primary);
+}
+.form-control-primary + .form-control-primary {
+  margin-top: 1rem;
+}
+.form-control-primary:focus {
+  outline: 0;
+  border-color: var(--app-color-primary-shade);
+}
+.form-control-primary:disabled, .form-control-primary[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-primary[type=file] {
+  overflow: hidden;
+}
+.form-control-primary[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

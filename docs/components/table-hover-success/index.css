@@ -1,0 +1,24 @@
+.table-hover-success {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table-hover-success tr {
+  margin: 0;
+  padding: 0;
+}
+.table-hover-success th {
+  font-weight: 700;
+}
+.table-hover-success th, .table-hover-success td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-hover-success thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-hover-success tbody tr:hover {
+  background: var(--app-color-success-shade);
+  color: var(--app-color-success-contrast);
+}

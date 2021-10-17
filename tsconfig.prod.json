@@ -1,0 +1,13 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": "dist/material",
+    "outDir": "dist/material-js/esm",
+    "module": "ESNext",
+    "target": "ES5",
+    "skipLibCheck": true,
+  },
+  "include": [
+    "dist/material/**/*.ts"
+  ]
+}

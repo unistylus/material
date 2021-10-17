@@ -1,0 +1,4 @@
+.border-background {
+  border: var(--app-size-border) solid var(--app-color-background);
+  border-radius: var(--app-size-radius);
+}

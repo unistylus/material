@@ -1,0 +1,24 @@
+.table-hover-secondary {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table-hover-secondary tr {
+  margin: 0;
+  padding: 0;
+}
+.table-hover-secondary th {
+  font-weight: 700;
+}
+.table-hover-secondary th, .table-hover-secondary td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-hover-secondary thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-hover-secondary tbody tr:hover {
+  background: var(--app-color-secondary-shade);
+  color: var(--app-color-secondary-contrast);
+}

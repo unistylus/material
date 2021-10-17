@@ -1,0 +1,24 @@
+.table-hover-medium {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table-hover-medium tr {
+  margin: 0;
+  padding: 0;
+}
+.table-hover-medium th {
+  font-weight: 700;
+}
+.table-hover-medium th, .table-hover-medium td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-hover-medium thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-hover-medium tbody tr:hover {
+  background: var(--app-color-medium-shade);
+  color: var(--app-color-medium-contrast);
+}

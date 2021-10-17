@@ -1,0 +1,26 @@
+.form-control-background {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+  background: var(--app-color-background);
+  color: var(--app-color-background);
+  border-bottom: var(--app-size-border) solid var(--app-color-background);
+}
+.form-control-background + .form-control-background {
+  margin-top: 1rem;
+}
+.form-control-background:focus {
+  outline: 0;
+  border-color: var(--app-color-background-shade);
+}
+.form-control-background:disabled, .form-control-background[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-background[type=file] {
+  overflow: hidden;
+}
+.form-control-background[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

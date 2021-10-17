@@ -1,0 +1,28 @@
+.button-outline-warning {
+  display: inline-block;
+  border-radius: var(--app-size-radius);
+  padding: 0.375rem 0.75rem;
+  background: none;
+  border: var(--app-size-border) solid var(--app-color-warning);
+  color: var(--app-color-warning);
+}
+.button-outline-warning + .button-outline-warning {
+  margin-right: 0.5rem;
+}
+.button-outline-warning:hover, .button-outline-warning:focus, .button-outline-warning:active {
+  outline: 0;
+  background: var(--app-color-warning);
+  border: var(--app-size-border) solid var(--app-color-warning);
+  color: var(--app-color-warning-contrast);
+  text-decoration: none;
+}
+.button-outline-warning:focus, .button-outline-warning:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-warning-rgb), 0.3);
+}
+.button-outline-warning:disabled {
+  opacity: 1;
+  border: var(--app-size-border) solid rgba(var(--app-color-warning-rgb), 0.5);
+  color: rgba(var(--app-color-warning-rgb), 0.5);
+  box-shadow: none;
+  background: none;
+}

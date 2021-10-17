@@ -1,0 +1,28 @@
+.form-control-dark-xl {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+  background: var(--app-color-background);
+  color: var(--app-color-dark);
+  border-bottom: var(--app-size-border) solid var(--app-color-dark);
+  padding: 1.875rem 0.9375rem;
+  font-size: calc(3.75 * var(--app-size-font));
+}
+.form-control-dark-xl + .form-control-dark-xl {
+  margin-top: 1rem;
+}
+.form-control-dark-xl:focus {
+  outline: 0;
+  border-color: var(--app-color-dark-shade);
+}
+.form-control-dark-xl:disabled, .form-control-dark-xl[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-dark-xl[type=file] {
+  overflow: hidden;
+}
+.form-control-dark-xl[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.button-light-xl {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-light);
+  color: var(--app-color-light-contrast);
+  padding: 1.40625rem 2.8125rem;
+  font-size: calc(3.75 * var(--app-size-font));
+}
+.button-light-xl + .button-light-xl {
+  margin-right: 0.5rem;
+}
+.button-light-xl:hover, .button-light-xl:focus, .button-light-xl:active {
+  outline: 0;
+  background: var(--app-color-light-shade);
+  color: var(--app-color-light-contrast);
+  text-decoration: none;
+}
+.button-light-xl:focus, .button-light-xl:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-light-rgb), 0.3);
+}
+.button-light-xl:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-light-rgb), 0.5);
+  color: rgba(var(--app-color-light-contrast-rgb), 0.5);
+  box-shadow: none;
+}

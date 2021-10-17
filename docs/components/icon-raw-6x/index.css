@@ -1,0 +1,9 @@
+.icon-raw-6x {
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 6rem;
+  height: 6rem;
+}

@@ -1,6 +1,6 @@
 {
-  "src": "src",
   "out": "dist/material",
+  "webCopies": ["CNAME"],
   "variables": {
     "size_variants": {"xs": 0.0625, "sm": 0.75, "lg": 1.5, "xl": 3.75}
   }

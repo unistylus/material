@@ -1,0 +1,24 @@
+.table-hover-primary {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table-hover-primary tr {
+  margin: 0;
+  padding: 0;
+}
+.table-hover-primary th {
+  font-weight: 700;
+}
+.table-hover-primary th, .table-hover-primary td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-hover-primary thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-hover-primary tbody tr:hover {
+  background: var(--app-color-primary-shade);
+  color: var(--app-color-primary-contrast);
+}

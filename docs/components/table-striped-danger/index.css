@@ -1,0 +1,26 @@
+.table-striped-danger {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-danger-contrast);
+}
+.table-striped-danger tr {
+  margin: 0;
+  padding: 0;
+}
+.table-striped-danger th {
+  font-weight: 700;
+}
+.table-striped-danger th, .table-striped-danger td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-striped-danger thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-striped-danger thead tr, .table-striped-danger tbody tr:nth-of-type(even) {
+  background: var(--app-color-danger);
+}
+.table-striped-danger tbody tr:nth-of-type(odd) {
+  background: var(--app-color-danger-shade);
+}

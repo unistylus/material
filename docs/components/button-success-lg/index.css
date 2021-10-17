@@ -1,0 +1,27 @@
+.button-success-lg {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-success);
+  color: var(--app-color-success-contrast);
+  padding: 0.5625rem 1.125rem;
+  font-size: calc(1.5 * var(--app-size-font));
+}
+.button-success-lg + .button-success-lg {
+  margin-right: 0.5rem;
+}
+.button-success-lg:hover, .button-success-lg:focus, .button-success-lg:active {
+  outline: 0;
+  background: var(--app-color-success-shade);
+  color: var(--app-color-success-contrast);
+  text-decoration: none;
+}
+.button-success-lg:focus, .button-success-lg:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-success-rgb), 0.3);
+}
+.button-success-lg:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-success-rgb), 0.5);
+  color: rgba(var(--app-color-success-contrast-rgb), 0.5);
+  box-shadow: none;
+}

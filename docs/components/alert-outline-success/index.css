@@ -1,0 +1,15 @@
+.alert-outline-success {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1rem;
+  border-radius: var(--app-size-radius);
+  font-weight: 500;
+  background: none;
+  color: var(--app-color-success-shade);
+  border: var(--app-size-border) solid var(--app-color-success);
+}
+.alert-outline-success em {
+  display: block;
+  flex: 1;
+}

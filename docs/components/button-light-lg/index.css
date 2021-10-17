@@ -1,0 +1,27 @@
+.button-light-lg {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-light);
+  color: var(--app-color-light-contrast);
+  padding: 0.5625rem 1.125rem;
+  font-size: calc(1.5 * var(--app-size-font));
+}
+.button-light-lg + .button-light-lg {
+  margin-right: 0.5rem;
+}
+.button-light-lg:hover, .button-light-lg:focus, .button-light-lg:active {
+  outline: 0;
+  background: var(--app-color-light-shade);
+  color: var(--app-color-light-contrast);
+  text-decoration: none;
+}
+.button-light-lg:focus, .button-light-lg:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-light-rgb), 0.3);
+}
+.button-light-lg:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-light-rgb), 0.5);
+  color: rgba(var(--app-color-light-contrast-rgb), 0.5);
+  box-shadow: none;
+}

@@ -1,0 +1,20 @@
+.table-borderless-success {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+  border: 1px solid var(--app-color-success);
+}
+.table-borderless-success tr {
+  margin: 0;
+  padding: 0;
+}
+.table-borderless-success th {
+  font-weight: 700;
+}
+.table-borderless-success th, .table-borderless-success td {
+  padding: 0.5rem;
+}
+.table-borderless-success thead th, .table-borderless-success th, .table-borderless-success td {
+  border: none !important;
+}

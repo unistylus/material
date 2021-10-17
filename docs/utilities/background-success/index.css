@@ -1,0 +1,4 @@
+.background-success {
+  background: var(--app-color-success);
+  color: var(--app-color-success-contrast);
+}

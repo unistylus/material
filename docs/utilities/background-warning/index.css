@@ -1,0 +1,4 @@
+.background-warning {
+  background: var(--app-color-warning);
+  color: var(--app-color-warning-contrast);
+}

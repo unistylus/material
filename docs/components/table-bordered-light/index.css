@@ -1,0 +1,19 @@
+.table-bordered-light {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table-bordered-light tr {
+  margin: 0;
+  padding: 0;
+}
+.table-bordered-light th {
+  font-weight: 700;
+}
+.table-bordered-light th, .table-bordered-light td {
+  padding: 0.5rem;
+}
+.table-bordered-light thead th, .table-bordered-light th, .table-bordered-light td {
+  border: 1px solid var(--app-color-light);
+}

@@ -1,0 +1,4 @@
+.border-light {
+  border: var(--app-size-border) solid var(--app-color-light);
+  border-radius: var(--app-size-radius);
+}

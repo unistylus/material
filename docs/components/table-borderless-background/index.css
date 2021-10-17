@@ -1,0 +1,20 @@
+.table-borderless-background {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+  border: 1px solid var(--app-color-background);
+}
+.table-borderless-background tr {
+  margin: 0;
+  padding: 0;
+}
+.table-borderless-background th {
+  font-weight: 700;
+}
+.table-borderless-background th, .table-borderless-background td {
+  padding: 0.5rem;
+}
+.table-borderless-background thead th, .table-borderless-background th, .table-borderless-background td {
+  border: none !important;
+}

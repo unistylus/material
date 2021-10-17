@@ -1,0 +1,26 @@
+.button-secondary {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  padding: 0.375rem 0.75rem;
+  background: var(--app-color-secondary);
+  color: var(--app-color-secondary-contrast);
+}
+.button-secondary + .button-secondary {
+  margin-right: 0.5rem;
+}
+.button-secondary:hover, .button-secondary:focus, .button-secondary:active {
+  outline: 0;
+  background: var(--app-color-secondary-shade);
+  color: var(--app-color-secondary-contrast);
+  text-decoration: none;
+}
+.button-secondary:focus, .button-secondary:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-secondary-rgb), 0.3);
+}
+.button-secondary:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-secondary-rgb), 0.5);
+  color: rgba(var(--app-color-secondary-contrast-rgb), 0.5);
+  box-shadow: none;
+}

@@ -1,0 +1,9 @@
+.ease {
+  transition: all 0.5s ease;
+}
+.ease-short {
+  transition: all 0.25s ease;
+}
+.ease-long {
+  transition: all 1s ease;
+}

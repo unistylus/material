@@ -1,0 +1,28 @@
+.article h1 {
+  display: none;
+}
+.article h2 {
+  font-size: 1.2rem;
+  margin-top: calc(var(--app-size-spacing) * 2);
+  font-weight: 700;
+}
+.article h3 {
+  font-size: 1.1rem;
+  margin-top: calc(var(--app-size-spacing) * 1.5);
+  color: var(--app-color-medium);
+  font-weight: 700;
+}
+.article table tbody tr td {
+  vertical-align: top !important;
+}
+.article p {
+  word-break: break-word !important;
+}
+.article img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
+.article hr {
+  color: var(--app-color-medium);
+}

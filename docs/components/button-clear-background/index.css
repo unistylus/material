@@ -1,0 +1,28 @@
+.button-clear-background {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  background: none;
+  border: none;
+  color: var(--app-color-background);
+  border: var(--app-size-border) solid rgba(0, 0, 0, 0);
+  border-radius: var(--app-size-radius);
+}
+.button-clear-background + .button-clear-background {
+  margin-right: 0.5rem;
+}
+.button-clear-background:hover {
+  outline: 0;
+  background: var(--app-color-foreground-shade);
+  text-decoration: none;
+  color: var(--app-color-background-shade);
+}
+.button-clear-background:focus, .button-clear-background:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-foreground-rgb), 0.3);
+  border-color: var(--app-color-background);
+}
+.button-clear-background:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-foreground-rgb), 0.5);
+  box-shadow: none;
+  color: rgba(var(--app-color-background), 0.5);
+}

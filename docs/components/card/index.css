@@ -1,0 +1,47 @@
+.card {
+  padding: 1rem;
+  background: var(--app-color-background);
+  box-shadow: 0 0 1px var(--app-color-medium);
+}
+.card-head {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.card-head .left {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.card-head .left .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 1px var(--app-color-medium);
+}
+.card-head .middle {
+  flex: 1;
+  margin-left: 1rem;
+}
+.card-head .middle .major {
+  font-size: 1rem;
+}
+.card-head .middle .minor {
+  font-size: 0.9rem;
+  color: var(--app-color-medium);
+}
+.card-head .right {
+  text-align: right;
+  width: 2rem;
+  height: 2rem;
+}
+.card-head .right button {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.card-body {
+  padding: 1rem 0;
+}

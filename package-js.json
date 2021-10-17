@@ -1,0 +1,25 @@
+{
+  "name": "@unistylus/material-js",
+  "version": "0.0.2",
+  "description": "The Unistylus Material collection (JS outputs)",
+  "author": "Lam Nhan",
+  "homepage": "https://unistylus.lamnhan.com",
+  "license": "MIT",
+  "main": "full.js",
+  "module": "esm/full.js",
+  "types": "esm/full.d.ts",
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "theming",
+    "angular"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unistylus/material.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unistylus/material/issues"
+  }
+}

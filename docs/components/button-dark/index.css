@@ -1,0 +1,26 @@
+.button-dark {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  padding: 0.375rem 0.75rem;
+  background: var(--app-color-dark);
+  color: var(--app-color-dark-contrast);
+}
+.button-dark + .button-dark {
+  margin-right: 0.5rem;
+}
+.button-dark:hover, .button-dark:focus, .button-dark:active {
+  outline: 0;
+  background: var(--app-color-dark-shade);
+  color: var(--app-color-dark-contrast);
+  text-decoration: none;
+}
+.button-dark:focus, .button-dark:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-dark-rgb), 0.3);
+}
+.button-dark:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-dark-rgb), 0.5);
+  color: rgba(var(--app-color-dark-contrast-rgb), 0.5);
+  box-shadow: none;
+}

@@ -1,0 +1,26 @@
+.table-striped-primary {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-primary-contrast);
+}
+.table-striped-primary tr {
+  margin: 0;
+  padding: 0;
+}
+.table-striped-primary th {
+  font-weight: 700;
+}
+.table-striped-primary th, .table-striped-primary td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-striped-primary thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-striped-primary thead tr, .table-striped-primary tbody tr:nth-of-type(even) {
+  background: var(--app-color-primary);
+}
+.table-striped-primary tbody tr:nth-of-type(odd) {
+  background: var(--app-color-primary-shade);
+}

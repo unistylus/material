@@ -1,0 +1,6 @@
+.text-gradient-background {
+  background: var(--app-gradient-background);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

@@ -1,0 +1,3 @@
+.font-7x {
+  font-size: calc(7 * var(--app-size-font));
+}

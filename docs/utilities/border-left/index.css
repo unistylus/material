@@ -1,0 +1,3 @@
+.border-left {
+  border-left: var(--app-size-border) solid var(--app-color-medium);
+}

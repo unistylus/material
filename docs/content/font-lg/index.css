@@ -1,0 +1,3 @@
+.font-lg {
+  font-size: calc(1.5 * var(--app-size-font));
+}

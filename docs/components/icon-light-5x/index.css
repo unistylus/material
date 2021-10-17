@@ -1,0 +1,10 @@
+.icon-light-5x {
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 5rem;
+  height: 5rem;
+  filter: var(--app-recolor-light);
+}

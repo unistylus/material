@@ -1,0 +1,4 @@
+.background {
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}

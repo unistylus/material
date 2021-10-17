@@ -1,0 +1,20 @@
+.table-borderless-light {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+  border: 1px solid var(--app-color-light);
+}
+.table-borderless-light tr {
+  margin: 0;
+  padding: 0;
+}
+.table-borderless-light th {
+  font-weight: 700;
+}
+.table-borderless-light th, .table-borderless-light td {
+  padding: 0.5rem;
+}
+.table-borderless-light thead th, .table-borderless-light th, .table-borderless-light td {
+  border: none !important;
+}

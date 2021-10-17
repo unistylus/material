@@ -1,0 +1,4 @@
+.background-gradient-danger {
+  background: var(--app-gradient-danger);
+  color: var(--app-color-danger-contrast);
+}

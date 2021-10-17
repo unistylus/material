@@ -1,0 +1,19 @@
+.table-bordered-primary {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table-bordered-primary tr {
+  margin: 0;
+  padding: 0;
+}
+.table-bordered-primary th {
+  font-weight: 700;
+}
+.table-bordered-primary th, .table-bordered-primary td {
+  padding: 0.5rem;
+}
+.table-bordered-primary thead th, .table-bordered-primary th, .table-bordered-primary td {
+  border: 1px solid var(--app-color-primary);
+}

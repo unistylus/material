@@ -1,0 +1,27 @@
+.button-secondary-xl {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-secondary);
+  color: var(--app-color-secondary-contrast);
+  padding: 1.40625rem 2.8125rem;
+  font-size: calc(3.75 * var(--app-size-font));
+}
+.button-secondary-xl + .button-secondary-xl {
+  margin-right: 0.5rem;
+}
+.button-secondary-xl:hover, .button-secondary-xl:focus, .button-secondary-xl:active {
+  outline: 0;
+  background: var(--app-color-secondary-shade);
+  color: var(--app-color-secondary-contrast);
+  text-decoration: none;
+}
+.button-secondary-xl:focus, .button-secondary-xl:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-secondary-rgb), 0.3);
+}
+.button-secondary-xl:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-secondary-rgb), 0.5);
+  color: rgba(var(--app-color-secondary-contrast-rgb), 0.5);
+  box-shadow: none;
+}

@@ -1,0 +1,4 @@
+.background-secondary {
+  background: var(--app-color-secondary);
+  color: var(--app-color-secondary-contrast);
+}

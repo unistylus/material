@@ -1,0 +1,4 @@
+.border-success {
+  border: var(--app-size-border) solid var(--app-color-success);
+  border-radius: var(--app-size-radius);
+}

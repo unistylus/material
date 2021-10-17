@@ -1,0 +1,24 @@
+.table-hover-dark {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table-hover-dark tr {
+  margin: 0;
+  padding: 0;
+}
+.table-hover-dark th {
+  font-weight: 700;
+}
+.table-hover-dark th, .table-hover-dark td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-hover-dark thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-hover-dark tbody tr:hover {
+  background: var(--app-color-dark-shade);
+  color: var(--app-color-dark-contrast);
+}

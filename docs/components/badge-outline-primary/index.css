@@ -1,0 +1,9 @@
+.badge-outline-primary {
+  border-radius: var(--app-size-radius);
+  padding: 0.25em 0.5em;
+  font-size: 0.75em;
+  font-weight: 700;
+  background: none;
+  color: var(--app-color-primary);
+  border: 1px solid var(--app-color-primary);
+}

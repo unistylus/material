@@ -23,7 +23,7 @@ Use SCSS:
 ```html
 https://unpkg.com/@unistylus/material-css@latest/reset.min.css
 https://unpkg.com/@unistylus/material-css@latest/core.min.css
-https://unpkg.com/@unistylus/material-css@latest/...min.css
+https://unpkg.com/@unistylus/material-css@latest/....min.css
 ```
 
 ### License

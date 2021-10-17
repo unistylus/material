@@ -1,0 +1,24 @@
+.table-hover-tertiary {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+}
+.table-hover-tertiary tr {
+  margin: 0;
+  padding: 0;
+}
+.table-hover-tertiary th {
+  font-weight: 700;
+}
+.table-hover-tertiary th, .table-hover-tertiary td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--app-color-background-shade);
+}
+.table-hover-tertiary thead th {
+  border-bottom: 1px solid var(--app-color-foreground);
+}
+.table-hover-tertiary tbody tr:hover {
+  background: var(--app-color-tertiary-shade);
+  color: var(--app-color-tertiary-contrast);
+}

@@ -1,7 +1,7 @@
 {
   "name": "@unistylus/material-css",
-  "version": "0.0.1",
-  "description": "The Unistylus Material soul CSS outputs.",
+  "version": "0.0.2",
+  "description": "The Unistylus Material collection (CSS outputs)",
   "author": "Lam Nhan",
   "homepage": "https://unistylus.lamnhan.com",
   "license": "MIT",

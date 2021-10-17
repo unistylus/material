@@ -1,0 +1,20 @@
+.table-borderless-tertiary {
+  width: 100%;
+  text-align: left;
+  background: var(--app-color-background);
+  color: var(--app-color-foreground);
+  border: 1px solid var(--app-color-tertiary);
+}
+.table-borderless-tertiary tr {
+  margin: 0;
+  padding: 0;
+}
+.table-borderless-tertiary th {
+  font-weight: 700;
+}
+.table-borderless-tertiary th, .table-borderless-tertiary td {
+  padding: 0.5rem;
+}
+.table-borderless-tertiary thead th, .table-borderless-tertiary th, .table-borderless-tertiary td {
+  border: none !important;
+}

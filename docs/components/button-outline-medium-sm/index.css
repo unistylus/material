@@ -1,0 +1,29 @@
+.button-outline-medium-sm {
+  display: inline-block;
+  border-radius: var(--app-size-radius);
+  background: none;
+  border: var(--app-size-border) solid var(--app-color-medium);
+  color: var(--app-color-medium);
+  padding: 0.28125rem 0.5625rem;
+  font-size: calc(0.75 * var(--app-size-font));
+}
+.button-outline-medium-sm + .button-outline-medium-sm {
+  margin-right: 0.5rem;
+}
+.button-outline-medium-sm:hover, .button-outline-medium-sm:focus, .button-outline-medium-sm:active {
+  outline: 0;
+  background: var(--app-color-medium);
+  border: var(--app-size-border) solid var(--app-color-medium);
+  color: var(--app-color-medium-contrast);
+  text-decoration: none;
+}
+.button-outline-medium-sm:focus, .button-outline-medium-sm:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-medium-rgb), 0.3);
+}
+.button-outline-medium-sm:disabled {
+  opacity: 1;
+  border: var(--app-size-border) solid rgba(var(--app-color-medium-rgb), 0.5);
+  color: rgba(var(--app-color-medium-rgb), 0.5);
+  box-shadow: none;
+  background: none;
+}

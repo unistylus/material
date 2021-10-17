@@ -1,0 +1,29 @@
+.button-outline-success-sm {
+  display: inline-block;
+  border-radius: var(--app-size-radius);
+  background: none;
+  border: var(--app-size-border) solid var(--app-color-success);
+  color: var(--app-color-success);
+  padding: 0.28125rem 0.5625rem;
+  font-size: calc(0.75 * var(--app-size-font));
+}
+.button-outline-success-sm + .button-outline-success-sm {
+  margin-right: 0.5rem;
+}
+.button-outline-success-sm:hover, .button-outline-success-sm:focus, .button-outline-success-sm:active {
+  outline: 0;
+  background: var(--app-color-success);
+  border: var(--app-size-border) solid var(--app-color-success);
+  color: var(--app-color-success-contrast);
+  text-decoration: none;
+}
+.button-outline-success-sm:focus, .button-outline-success-sm:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-success-rgb), 0.3);
+}
+.button-outline-success-sm:disabled {
+  opacity: 1;
+  border: var(--app-size-border) solid rgba(var(--app-color-success-rgb), 0.5);
+  color: rgba(var(--app-color-success-rgb), 0.5);
+  box-shadow: none;
+  background: none;
+}

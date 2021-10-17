@@ -1,0 +1,29 @@
+.button-outline-tertiary-xl {
+  display: inline-block;
+  border-radius: var(--app-size-radius);
+  background: none;
+  border: var(--app-size-border) solid var(--app-color-tertiary);
+  color: var(--app-color-tertiary);
+  padding: 1.40625rem 2.8125rem;
+  font-size: calc(3.75 * var(--app-size-font));
+}
+.button-outline-tertiary-xl + .button-outline-tertiary-xl {
+  margin-right: 0.5rem;
+}
+.button-outline-tertiary-xl:hover, .button-outline-tertiary-xl:focus, .button-outline-tertiary-xl:active {
+  outline: 0;
+  background: var(--app-color-tertiary);
+  border: var(--app-size-border) solid var(--app-color-tertiary);
+  color: var(--app-color-tertiary-contrast);
+  text-decoration: none;
+}
+.button-outline-tertiary-xl:focus, .button-outline-tertiary-xl:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-tertiary-rgb), 0.3);
+}
+.button-outline-tertiary-xl:disabled {
+  opacity: 1;
+  border: var(--app-size-border) solid rgba(var(--app-color-tertiary-rgb), 0.5);
+  color: rgba(var(--app-color-tertiary-rgb), 0.5);
+  box-shadow: none;
+  background: none;
+}

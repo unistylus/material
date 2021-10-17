@@ -1,0 +1,27 @@
+.button-danger-xl {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-danger);
+  color: var(--app-color-danger-contrast);
+  padding: 1.40625rem 2.8125rem;
+  font-size: calc(3.75 * var(--app-size-font));
+}
+.button-danger-xl + .button-danger-xl {
+  margin-right: 0.5rem;
+}
+.button-danger-xl:hover, .button-danger-xl:focus, .button-danger-xl:active {
+  outline: 0;
+  background: var(--app-color-danger-shade);
+  color: var(--app-color-danger-contrast);
+  text-decoration: none;
+}
+.button-danger-xl:focus, .button-danger-xl:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-danger-rgb), 0.3);
+}
+.button-danger-xl:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-danger-rgb), 0.5);
+  color: rgba(var(--app-color-danger-contrast-rgb), 0.5);
+  box-shadow: none;
+}

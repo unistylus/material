@@ -1,0 +1,10 @@
+.icon-primary-4x {
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 4rem;
+  height: 4rem;
+  filter: var(--app-recolor-primary);
+}

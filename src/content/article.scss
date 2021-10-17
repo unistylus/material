@@ -1,0 +1,42 @@
+@import '@unistylus/core';
+
+.article {
+
+  h1 {
+    display: none;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-top: m('*', 2);
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+    margin-top: m('*', 1.5);
+    color: var(--app-color-medium);
+    font-weight: 700;
+  }
+
+  table {
+
+    tbody tr td {
+      vertical-align: top !important;
+    }
+  }
+
+  p {
+    word-break: break-word !important;
+  }
+
+  img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  hr {
+    color: var(--app-color-medium);
+  }
+}

@@ -1,0 +1,29 @@
+.button-outline-warning-sm {
+  display: inline-block;
+  border-radius: var(--app-size-radius);
+  background: none;
+  border: var(--app-size-border) solid var(--app-color-warning);
+  color: var(--app-color-warning);
+  padding: 0.28125rem 0.5625rem;
+  font-size: calc(0.75 * var(--app-size-font));
+}
+.button-outline-warning-sm + .button-outline-warning-sm {
+  margin-right: 0.5rem;
+}
+.button-outline-warning-sm:hover, .button-outline-warning-sm:focus, .button-outline-warning-sm:active {
+  outline: 0;
+  background: var(--app-color-warning);
+  border: var(--app-size-border) solid var(--app-color-warning);
+  color: var(--app-color-warning-contrast);
+  text-decoration: none;
+}
+.button-outline-warning-sm:focus, .button-outline-warning-sm:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-warning-rgb), 0.3);
+}
+.button-outline-warning-sm:disabled {
+  opacity: 1;
+  border: var(--app-size-border) solid rgba(var(--app-color-warning-rgb), 0.5);
+  color: rgba(var(--app-color-warning-rgb), 0.5);
+  box-shadow: none;
+  background: none;
+}

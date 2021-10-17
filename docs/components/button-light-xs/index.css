@@ -1,0 +1,27 @@
+.button-light-xs {
+  display: inline-block;
+  border: none;
+  border-radius: var(--app-size-radius);
+  background: var(--app-color-light);
+  color: var(--app-color-light-contrast);
+  padding: 0.0234375rem 0.046875rem;
+  font-size: calc(0.0625 * var(--app-size-font));
+}
+.button-light-xs + .button-light-xs {
+  margin-right: 0.5rem;
+}
+.button-light-xs:hover, .button-light-xs:focus, .button-light-xs:active {
+  outline: 0;
+  background: var(--app-color-light-shade);
+  color: var(--app-color-light-contrast);
+  text-decoration: none;
+}
+.button-light-xs:focus, .button-light-xs:active {
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-light-rgb), 0.3);
+}
+.button-light-xs:disabled {
+  opacity: 1;
+  background: rgba(var(--app-color-light-rgb), 0.5);
+  color: rgba(var(--app-color-light-contrast-rgb), 0.5);
+  box-shadow: none;
+}
