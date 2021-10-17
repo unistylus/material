@@ -100,7 +100,7 @@
   --app-gradient-medium: linear-gradient(135deg, var(--app-color-medium-tint) 0%, var(--app-color-medium-shade) 100%);
   --app-gradient-light: linear-gradient(135deg, var(--app-color-light-tint) 0%, var(--app-color-light-shade) 100%);
   // images
-  --app-image-primary: background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');
+  --app-image-primary: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');
   --app-image-secondary: var(--app-image-primary);
   --app-image-tertiary: var(--app-image-primary);
   --app-image-success: var(--app-image-primary);
