@@ -1,30 +1,59 @@
+@import '@unistylus/core';
+
 [variant] {
-  display: inline-block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
   border: none;
-  border-radius: var(--app-size-radius);
-  padding: .375rem .75rem;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 p();
+  border-radius: r();
+  box-shadow: 0 3px 1px -2px rgba(fg-rgb(), .2), 0 2px 2px 0 rgba(fg-rgb(), .14), 0 1px 5px 0 rgba(fg-rgb(), .12);
+  position: relative;
+  overflow: hidden;
   background: var(--app-color-#{$value});
   color: var(--app-color-#{$value}-contrast);
 
   & + & {
-    margin-right: .5rem;
-  }
-  
-  &:hover, &:focus, &:active {
-    outline: 0;
-    background: var(--app-color-#{$value}-shade);
-    color: var(--app-color-#{$value}-contrast);
-    text-decoration: none;
+    margin-right: m('*', .5);
   }
 
-  &:focus, &:active {
-    box-shadow: 0 0 0 .25rem rgba(var(--app-color-#{$value}-rgb), .3);
+  &:hover, &:focus, &.active {
+    outline: 0;
+    text-decoration: none;
   }
 
   &:disabled {
     opacity: 1;
-    background: rgba(var(--app-color-#{$value}-rgb), .5);
-    color: rgba(var(--app-color-#{$value}-contrast-rgb), .5);
-    box-shadow: none;
+    cursor: default;
+    background: rgba(var(--app-color-#{$value}-rgb), .3);
+    color: rgba(var(--app-color-#{$value}-contrast), .5);
+  }
+  
+  span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: button_ripple 300ms linear;
+    background-color: rgba(var(--app-color-#{$value}-contrast-rgb), .3);
+  }
+
+  @keyframes button_ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
   }
 }
