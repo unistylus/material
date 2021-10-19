@@ -40,7 +40,7 @@
     "@unistylus/core": "0.0.10"
   },
   "devDependencies": {
-    "@unistylus/cli": "0.0.7",
+    "@unistylus/cli": "0.0.10",
     "clean-css-cli": "^5.3.0",
     "cpy-cli": "^3.1.1",
     "gts": "^3.1.0",

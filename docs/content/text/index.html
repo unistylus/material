@@ -9,15 +9,18 @@
   <title>Unistylus: @unistylus/material/content/text</title>
   <meta name="description" content="The Unistylus Material collection">
   <!-- All skins -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/skins/light-default.css">
-<link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/skins/dark.css">
-  <!-- Basic style -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/reset.css">
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/core.css">
+  <link rel="stylesheet" href="/skins/light-default.css">
+<link rel="stylesheet" href="/skins/dark.css">
+  <!-- Basic styles -->
+  <link rel="stylesheet" href="/reset/index.css">
+  <link rel="stylesheet" href="/core/index.css">
+  <link rel="stylesheet" href="/content/typography/index.css">
   <!-- Global style -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.7/assets/styles/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.10/assets/styles/index.css">
   <!-- Main style -->
   <link rel="stylesheet" href="index.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap">
 </head>
 <body>
 
@@ -63,7 +66,10 @@
 <pre><code class="language-scss"><span class="token keyword">@import</span> <span class="token string">'@unistylus/material/content/text'</span><span class="token punctuation">;</span>
 </code></pre>
 <p>Or, include CSS:</p>
-<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@unistylus/material-css@0.0.2/content/text.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@unistylus/material-css@0.0.3/content/text.min.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+</code></pre>
+<p>And, include JS (if available):</p>
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@unistylus/material-js@0.0.3/content/text.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 </code></pre>
 <ul>
 <li>Step 2: <strong>Use the class</strong></li>
@@ -86,10 +92,14 @@
 </footer>
     
 
+  <!-- Basic scripts -->
+  <script src="/core/index.js"></script>
   <!-- Global script -->
-  <script src="https://unpkg.com/@unistylus/cli@0.0.7/assets/scripts/index.js"></script>
+  <script src="https://unpkg.com/@unistylus/cli@0.0.10/assets/scripts/index.js"></script>
   <!-- Main script -->
   <script src="index.js"></script>
+  <!-- Custom scripts -->
+  
 </body>
 </html>
     

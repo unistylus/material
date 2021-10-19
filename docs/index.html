@@ -9,15 +9,18 @@
   <title>Unistylus: @unistylus/material</title>
   <meta name="description" content="The Unistylus Material collection">
   <!-- All skins -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/skins/light-default.css">
-<link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/skins/dark.css">
-  <!-- Basic style -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/reset.css">
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/material-css@0.0.2/core.css">
+  <link rel="stylesheet" href="/skins/light-default.css">
+<link rel="stylesheet" href="/skins/dark.css">
+  <!-- Basic styles -->
+  <link rel="stylesheet" href="/reset/index.css">
+  <link rel="stylesheet" href="/core/index.css">
+  <link rel="stylesheet" href="/content/typography/index.css">
   <!-- Global style -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.7/assets/styles/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.10/assets/styles/index.css">
   <!-- Main style -->
   <link rel="stylesheet" href="index.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap">
 </head>
 <body>
 
@@ -82,19 +85,20 @@
 <section class="section">
   <div class="head">Install</div>
   <div class="body">
-    <p>Install the package:</p>
-<pre><code class="language-bash"><span class="token function">npm</span> i @unistylus/material
+    <p>Install the package using <a href="https://unistylus-cli.lamnhan.com">the CLI</a> (same as <code>npm i @unistylus/material</code>):</p>
+<pre><code class="language-bash">unistylus i @unistylus/material
 </code></pre>
 <p>Or, include CDN links:</p>
 <pre><code class="language-html"><span class="token comment">&lt;!-- CSS --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@unistylus/material-css@0.0.2/core.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@unistylus/material-css@0.0.3/core.min.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 
-<span class="token comment">&lt;!-- JS --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@unistylus/material-js@0.0.2/core.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token comment">&lt;!-- JS (if available) --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@unistylus/material-js@0.0.3/core.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 </code></pre>
 
   </div>
 </section>
+
     
   </main>
   
@@ -108,10 +112,14 @@
 </footer>
     
 
+  <!-- Basic scripts -->
+  <script src="/core/index.js"></script>
   <!-- Global script -->
-  <script src="https://unpkg.com/@unistylus/cli@0.0.7/assets/scripts/index.js"></script>
+  <script src="https://unpkg.com/@unistylus/cli@0.0.10/assets/scripts/index.js"></script>
   <!-- Main script -->
   <script src="index.js"></script>
+  <!-- Custom scripts -->
+  
 </body>
 </html>
     

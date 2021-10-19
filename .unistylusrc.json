@@ -1,7 +1,10 @@
 {
   "out": "dist/material",
-  "webCopies": ["CNAME"],
   "variables": {
     "size_variants": {"xs": 0.0625, "sm": 0.75, "lg": 1.5, "xl": 3.75}
+  },
+  "web": {
+    "copies": ["CNAME"],
+    "styles": ["https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap"]
   }
 }
