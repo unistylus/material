@@ -1,11 +1,13 @@
+@import '@unistylus/core';
+
 [default] {
   display: block;
   width: 100%;
-  padding: .5rem .25rem;
-  background: var(--app-color-background);
+  padding: .5rem;
   color: var(--app-color-foreground);
-  border: none;
-  border-bottom: var(--app-size-border) solid var(--app-color-medium);
+  border:  1px solid var(--app-color-medium);
+  border-radius: r();
+  background: bg();
 
   & + & {
     margin-top: 1rem;
