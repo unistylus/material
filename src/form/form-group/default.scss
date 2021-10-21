@@ -1,0 +1,122 @@
+@import "@unistylus/core";
+
+[default] {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  background: bg();
+
+  .form-control {
+    background: none;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: calc(100% - 15px);
+    border: none;
+    border-bottom: 1px solid #757575;
+  }
+
+  .form-control:focus {
+    outline: none;
+  }
+
+  /* LABEL */
+
+  .form-label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -webkit-transition: .2s ease all;
+  }
+
+  .form-control:focus ~ .form-label,
+  .form-control:valid ~ .form-label {
+    top: -1rem;
+    font-size: .85rem;
+    color: #5264ae;
+  }
+
+  /* BOTTOM BAR */
+
+  .form-material-bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .form-material-bar:before,
+  .form-material-bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #5264ae;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  .form-material-bar:before {
+    left: 50%;
+  }
+  .form-material-bar:after {
+    right: 50%;
+  }
+
+  .form-control:focus ~ .form-material-bar:before,
+  .form-control:focus ~ .form-material-bar:after {
+    width: 50%;
+  }
+
+  /* HIGHLIGHTER */
+
+  .form-material-highlight {
+    position: absolute;
+    height: 60%;
+    width: 25%;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .form-control:focus ~ .form-material-highlight {
+    -webkit-animation: inputHighlighter .3s ease;
+    -moz-animation: inputHighlighter .3s ease;
+    animation: inputHighlighter .3s ease;
+  }
+
+  @-webkit-keyframes inputHighlighter {
+    from {
+      background: #5264ae;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  @-moz-keyframes inputHighlighter {
+    from {
+      background: #5264ae;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  @keyframes inputHighlighter {
+    from {
+      background: #5264ae;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+}
