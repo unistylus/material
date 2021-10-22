@@ -1,6 +1,6 @@
 @import "@unistylus/core";
 
-[default] {
+[variant] {
   display: block;
   position: relative;
   width: 100%;
@@ -40,7 +40,7 @@
   .form-control:valid ~ .form-label {
     top: m('*', -1);
     font-size: .85rem;
-    color: fg();
+    color: var(--app-color-#{$value});
   }
 
   /* BOTTOM BAR */
@@ -57,7 +57,7 @@
     width: 0;
     bottom: 0;
     position: absolute;
-    background: fg();
+    background: var(--app-color-#{$value});
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
@@ -94,7 +94,7 @@
 
   @-webkit-keyframes inputHighlighter {
     from {
-      background: fg();
+      background: var(--app-color-#{$value});
     }
     to {
       width: 0;
@@ -103,7 +103,7 @@
   }
   @-moz-keyframes inputHighlighter {
     from {
-      background: fg();
+      background: var(--app-color-#{$value});
     }
     to {
       width: 0;
@@ -112,7 +112,7 @@
   }
   @keyframes inputHighlighter {
     from {
-      background: fg();
+      background: var(--app-color-#{$value});
     }
     to {
       width: 0;

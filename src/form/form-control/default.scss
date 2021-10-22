@@ -2,17 +2,18 @@
 
 [default] {
   display: block;
-  width: calc(100% - 1rem);
-  padding: .75rem .5rem;
+  width: calc(100% - p('*', .95));
+  padding: p('*', .7) p('*', .7) p('*', .7) p('*', .25);
   color: var(--app-color-foreground);
   border-top: 0;
   border-left: 0;
   border-right: 0;
   border-bottom: 1px solid var(--app-color-medium);
-  background: bg();
+  background: none;
+  font-size: 1.15rem;
 
   & + & {
-    margin-top: 1rem;
+    margin-top: m();
   }
 
   &:focus {

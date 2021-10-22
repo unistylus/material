@@ -1,19 +1,24 @@
+@import '@unistylus/core';
+
 [variant] {
   display: block;
-  width: 100%;
-  padding: .5rem .25rem;
-  background: var(--app-color-background);
-  color: var(--app-color-#{$value1});
-  border-bottom: var(--app-size-border) solid var(--app-color-#{$value1});
-  padding: (.5rem * #{$value2}) (.25rem * #{$value2});
-  font-size: calc(#{$value2} * var(--app-size-font));
+  width: calc(100% - p('*', .95 * #{$value2}));
+  padding: p('*', .7 * #{$value2}) p('*', .7 * #{$value2}) p('*', .7 * #{$value2}) p('*', .25 * #{$value2});
+  color: var(--app-color-foreground);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--app-color-medium);
+  background: none;
+  font-size: calc(#{$value2} * 1.15rem);
 
   & + & {
-    margin-top: 1rem;
+    margin-top: m();
   }
 
   &:focus {
     outline: 0;
+    border-bottom-width: 2px;
     border-color: var(--app-color-#{$value1}-shade);
   }
 

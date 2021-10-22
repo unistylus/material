@@ -1,18 +1,25 @@
+@import '@unistylus/core';
+
 [variant] {
   display: block;
-  width: 100%;
-  padding: .5rem .25rem;
-  background: var(--app-color-background);
-  color: var(--app-color-#{$value});
-  border-bottom: var(--app-size-border) solid var(--app-color-#{$value});
+  width: calc(100% - p('*', .95));
+  padding: p('*', .7) p('*', .7) p('*', .7) p('*', .25);
+  color: var(--app-color-foreground);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--app-color-medium);
+  background: none;
+  font-size: 1.15rem;
 
   & + & {
-    margin-top: 1rem;
+    margin-top: m();
   }
 
   &:focus {
     outline: 0;
-    border-color: var(--app-color-#{$value}-shade);
+    border-bottom-width: 2px;
+    border-color: var(--app-color-#{$value});
   }
 
   &:disabled, &[readonly] {

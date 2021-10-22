@@ -1,6 +1,6 @@
 @import "@unistylus/core";
 
-[default] {
+[variant] {
   display: block;
   position: relative;
   width: 100%;
@@ -8,13 +8,13 @@
   
   .form-control {
     background: none;
-    font-size: 1.15rem;
-    padding: p('*', .7) p('*', .7) p('*', .7) p('*', .25);
+    padding: p('*', .7 * #{$value2}) p('*', .7 * #{$value2}) p('*', .7 * #{$value2}) p('*', .25 * #{$value2});
     display: block;
-    width: calc(100% - p('*', .95));
+    width: calc(100% - p('*', .95 * #{$value2}));
     border: none;
     border-bottom: 1px solid me();
     color: fg();
+    font-size: calc(#{$value2} * 1.15rem);
   }
 
   .form-control:focus {
@@ -25,12 +25,12 @@
 
   .form-label {
     color: me();
-    font-size: 1.15rem;
+    font-size: calc(#{$value2} * 1.15rem);
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    left: p('*', .25);
-    top: p('*', .7);
+    left: p('*', .25 * #{$value2});
+    top: p('*', .7 * #{$value2});
     transition: .2s ease all;
     -moz-transition: .2s ease all;
     -webkit-transition: .2s ease all;
@@ -39,8 +39,8 @@
   .form-control:focus ~ .form-label,
   .form-control:valid ~ .form-label {
     top: m('*', -1);
-    font-size: .85rem;
-    color: fg();
+    font-size: calc(#{$value2} * .85rem);
+    color: var(--app-color-#{$value1});
   }
 
   /* BOTTOM BAR */
@@ -57,7 +57,7 @@
     width: 0;
     bottom: 0;
     position: absolute;
-    background: fg();
+    background: var(--app-color-#{$value1});
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
@@ -94,7 +94,7 @@
 
   @-webkit-keyframes inputHighlighter {
     from {
-      background: fg();
+      background: var(--app-color-#{$value1});
     }
     to {
       width: 0;
@@ -103,7 +103,7 @@
   }
   @-moz-keyframes inputHighlighter {
     from {
-      background: fg();
+      background: var(--app-color-#{$value1});
     }
     to {
       width: 0;
@@ -112,7 +112,7 @@
   }
   @keyframes inputHighlighter {
     from {
-      background: fg();
+      background: var(--app-color-#{$value1});
     }
     to {
       width: 0;
