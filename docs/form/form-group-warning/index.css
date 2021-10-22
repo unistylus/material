@@ -1,0 +1,108 @@
+.form-group-warning {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: var(--app-size-spacing);
+  /* LABEL */
+  /* BOTTOM BAR */
+  /* HIGHLIGHTER */
+}
+.form-group-warning .form-control {
+  background: none;
+  font-size: 1.15rem;
+  padding: calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.25);
+  display: block;
+  width: calc(100% - (var(--app-size-spacing) * 0.95));
+  border: none;
+  border-bottom: 1px solid var(--app-color-medium);
+  color: var(--app-color-foreground);
+}
+.form-group-warning .form-control:focus {
+  outline: none;
+}
+.form-group-warning .form-label {
+  color: var(--app-color-medium);
+  font-size: 1.15rem;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: calc(var(--app-size-spacing) * 0.25);
+  top: calc(var(--app-size-spacing) * 0.7);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.form-group-warning .form-control:focus ~ .form-label,
+.form-group-warning .form-control:valid ~ .form-label {
+  top: calc(var(--app-size-spacing) * -1);
+  font-size: 0.85rem;
+  color: var(--app-color-warning);
+}
+.form-group-warning .form-material-bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.form-group-warning .form-material-bar:before,
+.form-group-warning .form-material-bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: var(--app-color-warning);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.form-group-warning .form-material-bar:before {
+  left: 50%;
+}
+.form-group-warning .form-material-bar:after {
+  right: 50%;
+}
+.form-group-warning .form-control:focus ~ .form-material-bar:before,
+.form-group-warning .form-control:focus ~ .form-material-bar:after {
+  width: 50%;
+}
+.form-group-warning .form-material-highlight {
+  position: absolute;
+  height: 60%;
+  width: 25%;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.form-group-warning .form-control:focus ~ .form-material-highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: var(--app-color-warning);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: var(--app-color-warning);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: var(--app-color-warning);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}

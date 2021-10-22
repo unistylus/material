@@ -1,17 +1,22 @@
 .form-control-light {
   display: block;
-  width: 100%;
-  padding: 0.5rem 0.25rem;
-  background: var(--app-color-background);
-  color: var(--app-color-light);
-  border-bottom: var(--app-size-border) solid var(--app-color-light);
+  width: calc(100% - (var(--app-size-spacing) * 0.95));
+  padding: calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.25);
+  color: var(--app-color-foreground);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--app-color-medium);
+  background: none;
+  font-size: 1.15rem;
 }
 .form-control-light + .form-control-light {
-  margin-top: 1rem;
+  margin-top: var(--app-size-spacing);
 }
 .form-control-light:focus {
   outline: 0;
-  border-color: var(--app-color-light-shade);
+  border-bottom-width: 2px;
+  border-color: var(--app-color-light);
 }
 .form-control-light:disabled, .form-control-light[readonly] {
   opacity: 1;

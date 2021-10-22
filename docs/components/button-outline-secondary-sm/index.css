@@ -4,8 +4,8 @@
   background: none;
   border: var(--app-size-border) solid var(--app-color-secondary);
   color: var(--app-color-secondary);
-  padding: 0.28125rem 0.5625rem;
-  font-size: calc(0.75 * var(--app-size-font));
+  padding: 0.3rem 0.6rem;
+  font-size: calc(0.8 * var(--app-size-font));
 }
 .button-outline-secondary-sm + .button-outline-secondary-sm {
   margin-right: 0.5rem;

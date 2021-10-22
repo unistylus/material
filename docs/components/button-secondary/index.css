@@ -15,14 +15,13 @@
   text-align: center;
   margin: 0;
   min-width: 64px;
-  line-height: 36px;
-  padding: 0 var(--app-size-spacing);
   border-radius: var(--app-size-radius);
-  box-shadow: 0 3px 1px -2px rgba(var(--app-color-foreground-rgb), 0.2), 0 2px 2px 0 rgba(var(--app-color-foreground-rgb), 0.14), 0 1px 5px 0 rgba(var(--app-color-foreground-rgb), 0.12);
+  box-shadow: var(--app-size-shadow);
   position: relative;
   overflow: hidden;
   background: var(--app-color-secondary);
   color: var(--app-color-secondary-contrast);
+  padding: calc(var(--app-size-spacing) * 0.6) calc(var(--app-size-spacing) * 1.2);
 }
 .button-secondary + .button-secondary {
   margin-right: calc(var(--app-size-spacing) * 0.5);

@@ -1,18 +1,21 @@
 .form-control-secondary-xs {
   display: block;
-  width: 100%;
-  padding: 0.5rem 0.25rem;
-  background: var(--app-color-background);
-  color: var(--app-color-secondary);
-  border-bottom: var(--app-size-border) solid var(--app-color-secondary);
-  padding: 0.03125rem 0.015625rem;
-  font-size: calc(0.0625 * var(--app-size-font));
+  width: calc(100% - (var(--app-size-spacing) * 0.57));
+  padding: calc(var(--app-size-spacing) * 0.42) calc(var(--app-size-spacing) * 0.42) calc(var(--app-size-spacing) * 0.42) calc(var(--app-size-spacing) * 0.15);
+  color: var(--app-color-foreground);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--app-color-medium);
+  background: none;
+  font-size: 0.69rem;
 }
 .form-control-secondary-xs + .form-control-secondary-xs {
-  margin-top: 1rem;
+  margin-top: var(--app-size-spacing);
 }
 .form-control-secondary-xs:focus {
   outline: 0;
+  border-bottom-width: 2px;
   border-color: var(--app-color-secondary-shade);
 }
 .form-control-secondary-xs:disabled, .form-control-secondary-xs[readonly] {

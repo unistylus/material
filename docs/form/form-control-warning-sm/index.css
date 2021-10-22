@@ -1,18 +1,21 @@
 .form-control-warning-sm {
   display: block;
-  width: 100%;
-  padding: 0.5rem 0.25rem;
-  background: var(--app-color-background);
-  color: var(--app-color-warning);
-  border-bottom: var(--app-size-border) solid var(--app-color-warning);
-  padding: 0.375rem 0.1875rem;
-  font-size: calc(0.75 * var(--app-size-font));
+  width: calc(100% - (var(--app-size-spacing) * 0.76));
+  padding: calc(var(--app-size-spacing) * 0.56) calc(var(--app-size-spacing) * 0.56) calc(var(--app-size-spacing) * 0.56) calc(var(--app-size-spacing) * 0.2);
+  color: var(--app-color-foreground);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--app-color-medium);
+  background: none;
+  font-size: 0.92rem;
 }
 .form-control-warning-sm + .form-control-warning-sm {
-  margin-top: 1rem;
+  margin-top: var(--app-size-spacing);
 }
 .form-control-warning-sm:focus {
   outline: 0;
+  border-bottom-width: 2px;
   border-color: var(--app-color-warning-shade);
 }
 .form-control-warning-sm:disabled, .form-control-warning-sm[readonly] {

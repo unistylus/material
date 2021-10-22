@@ -1,18 +1,21 @@
 .form-control-foreground-xl {
   display: block;
-  width: 100%;
-  padding: 0.5rem 0.25rem;
-  background: var(--app-color-background);
+  width: calc(100% - (var(--app-size-spacing) * 1.425));
+  padding: calc(var(--app-size-spacing) * 1.05) calc(var(--app-size-spacing) * 1.05) calc(var(--app-size-spacing) * 1.05) calc(var(--app-size-spacing) * 0.375);
   color: var(--app-color-foreground);
-  border-bottom: var(--app-size-border) solid var(--app-color-foreground);
-  padding: 1.875rem 0.9375rem;
-  font-size: calc(3.75 * var(--app-size-font));
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--app-color-medium);
+  background: none;
+  font-size: 1.725rem;
 }
 .form-control-foreground-xl + .form-control-foreground-xl {
-  margin-top: 1rem;
+  margin-top: var(--app-size-spacing);
 }
 .form-control-foreground-xl:focus {
   outline: 0;
+  border-bottom-width: 2px;
   border-color: var(--app-color-foreground-shade);
 }
 .form-control-foreground-xl:disabled, .form-control-foreground-xl[readonly] {

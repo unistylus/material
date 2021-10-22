@@ -1,17 +1,22 @@
 .form-control-medium {
   display: block;
-  width: 100%;
-  padding: 0.5rem 0.25rem;
-  background: var(--app-color-background);
-  color: var(--app-color-medium);
-  border-bottom: var(--app-size-border) solid var(--app-color-medium);
+  width: calc(100% - (var(--app-size-spacing) * 0.95));
+  padding: calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.25);
+  color: var(--app-color-foreground);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--app-color-medium);
+  background: none;
+  font-size: 1.15rem;
 }
 .form-control-medium + .form-control-medium {
-  margin-top: 1rem;
+  margin-top: var(--app-size-spacing);
 }
 .form-control-medium:focus {
   outline: 0;
-  border-color: var(--app-color-medium-shade);
+  border-bottom-width: 2px;
+  border-color: var(--app-color-medium);
 }
 .form-control-medium:disabled, .form-control-medium[readonly] {
   opacity: 1;

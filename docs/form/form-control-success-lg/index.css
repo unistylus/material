@@ -1,18 +1,21 @@
 .form-control-success-lg {
   display: block;
-  width: 100%;
-  padding: 0.5rem 0.25rem;
-  background: var(--app-color-background);
-  color: var(--app-color-success);
-  border-bottom: var(--app-size-border) solid var(--app-color-success);
-  padding: 0.75rem 0.375rem;
-  font-size: calc(1.5 * var(--app-size-font));
+  width: calc(100% - (var(--app-size-spacing) * 1.14));
+  padding: calc(var(--app-size-spacing) * 0.84) calc(var(--app-size-spacing) * 0.84) calc(var(--app-size-spacing) * 0.84) calc(var(--app-size-spacing) * 0.3);
+  color: var(--app-color-foreground);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--app-color-medium);
+  background: none;
+  font-size: 1.38rem;
 }
 .form-control-success-lg + .form-control-success-lg {
-  margin-top: 1rem;
+  margin-top: var(--app-size-spacing);
 }
 .form-control-success-lg:focus {
   outline: 0;
+  border-bottom-width: 2px;
   border-color: var(--app-color-success-shade);
 }
 .form-control-success-lg:disabled, .form-control-success-lg[readonly] {

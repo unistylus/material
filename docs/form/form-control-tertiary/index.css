@@ -1,17 +1,22 @@
 .form-control-tertiary {
   display: block;
-  width: 100%;
-  padding: 0.5rem 0.25rem;
-  background: var(--app-color-background);
-  color: var(--app-color-tertiary);
-  border-bottom: var(--app-size-border) solid var(--app-color-tertiary);
+  width: calc(100% - (var(--app-size-spacing) * 0.95));
+  padding: calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.7) calc(var(--app-size-spacing) * 0.25);
+  color: var(--app-color-foreground);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--app-color-medium);
+  background: none;
+  font-size: 1.15rem;
 }
 .form-control-tertiary + .form-control-tertiary {
-  margin-top: 1rem;
+  margin-top: var(--app-size-spacing);
 }
 .form-control-tertiary:focus {
   outline: 0;
-  border-color: var(--app-color-tertiary-shade);
+  border-bottom-width: 2px;
+  border-color: var(--app-color-tertiary);
 }
 .form-control-tertiary:disabled, .form-control-tertiary[readonly] {
   opacity: 1;

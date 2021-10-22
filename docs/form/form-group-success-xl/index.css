@@ -1,0 +1,108 @@
+.form-group-success-xl {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: var(--app-size-spacing);
+  /* LABEL */
+  /* BOTTOM BAR */
+  /* HIGHLIGHTER */
+}
+.form-group-success-xl .form-control {
+  background: none;
+  padding: calc(var(--app-size-spacing) * 1.05) calc(var(--app-size-spacing) * 1.05) calc(var(--app-size-spacing) * 1.05) calc(var(--app-size-spacing) * 0.375);
+  display: block;
+  width: calc(100% - (var(--app-size-spacing) * 1.425));
+  border: none;
+  border-bottom: 1px solid var(--app-color-medium);
+  color: var(--app-color-foreground);
+  font-size: 1.725rem;
+}
+.form-group-success-xl .form-control:focus {
+  outline: none;
+}
+.form-group-success-xl .form-label {
+  color: var(--app-color-medium);
+  font-size: 1.725rem;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: calc(var(--app-size-spacing) * 0.375);
+  top: calc(var(--app-size-spacing) * 1.05);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.form-group-success-xl .form-control:focus ~ .form-label,
+.form-group-success-xl .form-control:valid ~ .form-label {
+  top: calc(var(--app-size-spacing) * -1);
+  font-size: 1.275rem;
+  color: var(--app-color-success);
+}
+.form-group-success-xl .form-material-bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.form-group-success-xl .form-material-bar:before,
+.form-group-success-xl .form-material-bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: var(--app-color-success);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.form-group-success-xl .form-material-bar:before {
+  left: 50%;
+}
+.form-group-success-xl .form-material-bar:after {
+  right: 50%;
+}
+.form-group-success-xl .form-control:focus ~ .form-material-bar:before,
+.form-group-success-xl .form-control:focus ~ .form-material-bar:after {
+  width: 50%;
+}
+.form-group-success-xl .form-material-highlight {
+  position: absolute;
+  height: 60%;
+  width: 25%;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.form-group-success-xl .form-control:focus ~ .form-material-highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: var(--app-color-success);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: var(--app-color-success);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: var(--app-color-success);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}

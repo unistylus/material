@@ -4,8 +4,8 @@
   background: none;
   border: var(--app-size-border) solid var(--app-color-danger);
   color: var(--app-color-danger);
-  padding: 1.40625rem 2.8125rem;
-  font-size: calc(3.75 * var(--app-size-font));
+  padding: 0.5625rem 1.125rem;
+  font-size: calc(1.5 * var(--app-size-font));
 }
 .button-outline-danger-xl + .button-outline-danger-xl {
   margin-right: 0.5rem;

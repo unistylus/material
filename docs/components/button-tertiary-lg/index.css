@@ -1,27 +1,52 @@
 .button-tertiary-lg {
-  display: inline-block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
   border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 64px;
   border-radius: var(--app-size-radius);
+  box-shadow: var(--app-size-shadow);
+  position: relative;
+  overflow: hidden;
   background: var(--app-color-tertiary);
   color: var(--app-color-tertiary-contrast);
-  padding: 0.5625rem 1.125rem;
-  font-size: calc(1.5 * var(--app-size-font));
+  padding: calc(var(--app-size-spacing) * 0.72) calc(var(--app-size-spacing) * 1.44);
+  font-size: calc(1.2 * var(--app-size-font));
 }
 .button-tertiary-lg + .button-tertiary-lg {
-  margin-right: 0.5rem;
+  margin-right: calc(var(--app-size-spacing) * 0.5);
 }
-.button-tertiary-lg:hover, .button-tertiary-lg:focus, .button-tertiary-lg:active {
+.button-tertiary-lg:hover, .button-tertiary-lg:focus, .button-tertiary-lg.active {
   outline: 0;
-  background: var(--app-color-tertiary-shade);
-  color: var(--app-color-tertiary-contrast);
   text-decoration: none;
-}
-.button-tertiary-lg:focus, .button-tertiary-lg:active {
-  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-tertiary-rgb), 0.3);
 }
 .button-tertiary-lg:disabled {
   opacity: 1;
-  background: rgba(var(--app-color-tertiary-rgb), 0.5);
-  color: rgba(var(--app-color-tertiary-contrast-rgb), 0.5);
-  box-shadow: none;
+  cursor: default;
+  background: rgba(var(--app-color-tertiary-rgb), 0.3);
+  color: rgba(var(--app-color-tertiary-contrast), 0.5);
+}
+.button-tertiary-lg span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: button_ripple 350ms linear;
+  background-color: rgba(var(--app-color-tertiary-contrast-rgb), 0.3);
+}
+@keyframes button_ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }

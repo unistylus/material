@@ -1,27 +1,52 @@
 .button-danger-xl {
-  display: inline-block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
   border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 64px;
   border-radius: var(--app-size-radius);
+  box-shadow: var(--app-size-shadow);
+  position: relative;
+  overflow: hidden;
   background: var(--app-color-danger);
   color: var(--app-color-danger-contrast);
-  padding: 1.40625rem 2.8125rem;
-  font-size: calc(3.75 * var(--app-size-font));
+  padding: calc(var(--app-size-spacing) * 0.9) calc(var(--app-size-spacing) * 1.8);
+  font-size: calc(1.5 * var(--app-size-font));
 }
 .button-danger-xl + .button-danger-xl {
-  margin-right: 0.5rem;
+  margin-right: calc(var(--app-size-spacing) * 0.5);
 }
-.button-danger-xl:hover, .button-danger-xl:focus, .button-danger-xl:active {
+.button-danger-xl:hover, .button-danger-xl:focus, .button-danger-xl.active {
   outline: 0;
-  background: var(--app-color-danger-shade);
-  color: var(--app-color-danger-contrast);
   text-decoration: none;
-}
-.button-danger-xl:focus, .button-danger-xl:active {
-  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-danger-rgb), 0.3);
 }
 .button-danger-xl:disabled {
   opacity: 1;
-  background: rgba(var(--app-color-danger-rgb), 0.5);
-  color: rgba(var(--app-color-danger-contrast-rgb), 0.5);
-  box-shadow: none;
+  cursor: default;
+  background: rgba(var(--app-color-danger-rgb), 0.3);
+  color: rgba(var(--app-color-danger-contrast), 0.5);
+}
+.button-danger-xl span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: button_ripple 350ms linear;
+  background-color: rgba(var(--app-color-danger-contrast-rgb), 0.3);
+}
+@keyframes button_ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
