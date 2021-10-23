@@ -1,24 +1,48 @@
+@import '@unistylus/core';
+
 [default] {
   width: 100%;
   text-align: left;
+  border-spacing: 0;
   background: var(--app-color-background);
   color: var(--app-color-foreground);
+  box-shadow: z();
 
   tr {
     margin: 0;
     padding: 0;
-  }
-  
-  th {
-    font-weight: 700;
+    border: none;
+    border-bottom: 1px solid var(--app-color-background-shade);
+    height: 48px;
   }
 
   th, td {
-    padding: .5rem;
+    padding-left: 1rem;
+    font-size: .9rem;
+    border: none;
     border-bottom: 1px solid var(--app-color-background-shade);
   }
 
-  thead th {
-    border-bottom: 1px solid var(--app-color-foreground);
+  thead {
+    tr {
+      height: 56px;
+    }
+    
+    th {
+      font-size: .75rem;
+      color: me();
+      font-weight: normal;
+    }
+  }
+
+  tbody {
+
+    tr:last-child {
+      border-bottom: none;
+    }
+
+    th {
+      font-weight: normal;
+    }
   }
 }
