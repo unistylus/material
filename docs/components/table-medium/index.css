@@ -1,20 +1,35 @@
 .table-medium {
   width: 100%;
   text-align: left;
+  border-spacing: 0;
   background: var(--app-color-medium);
   color: var(--app-color-medium-contrast);
+  box-shadow: var(--app-size-shadow);
 }
 .table-medium tr {
   margin: 0;
   padding: 0;
-}
-.table-medium th {
-  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid var(--app-color-medium-shade);
+  height: 48px;
 }
 .table-medium th, .table-medium td {
-  padding: 0.5rem;
-  border-bottom: 1px solid var(--app-color-medium-tint);
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  border: none;
+  border-bottom: 1px solid var(--app-color-medium-shade);
+}
+.table-medium thead tr {
+  height: 56px;
 }
 .table-medium thead th {
-  border-bottom: 1px solid var(--app-color-medium-shade);
+  font-size: 0.75rem;
+  color: rgba(var(--app-color-medium-contrast-rgb), 0.5);
+  font-weight: normal;
+}
+.table-medium tbody tr:last-child {
+  border-bottom: none;
+}
+.table-medium tbody th {
+  font-weight: normal;
 }

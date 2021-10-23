@@ -1,20 +1,35 @@
 .table-danger {
   width: 100%;
   text-align: left;
+  border-spacing: 0;
   background: var(--app-color-danger);
   color: var(--app-color-danger-contrast);
+  box-shadow: var(--app-size-shadow);
 }
 .table-danger tr {
   margin: 0;
   padding: 0;
-}
-.table-danger th {
-  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid var(--app-color-danger-shade);
+  height: 48px;
 }
 .table-danger th, .table-danger td {
-  padding: 0.5rem;
-  border-bottom: 1px solid var(--app-color-danger-tint);
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  border: none;
+  border-bottom: 1px solid var(--app-color-danger-shade);
+}
+.table-danger thead tr {
+  height: 56px;
 }
 .table-danger thead th {
-  border-bottom: 1px solid var(--app-color-danger-shade);
+  font-size: 0.75rem;
+  color: rgba(var(--app-color-danger-contrast-rgb), 0.5);
+  font-weight: normal;
+}
+.table-danger tbody tr:last-child {
+  border-bottom: none;
+}
+.table-danger tbody th {
+  font-weight: normal;
 }

@@ -5,6 +5,7 @@
     "outDir": "dist/material-js/esm",
     "module": "ESNext",
     "target": "ES5",
+    "lib": ["DOM"],
     "skipLibCheck": true,
   },
   "include": [

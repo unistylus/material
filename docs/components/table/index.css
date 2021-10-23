@@ -1,20 +1,35 @@
 .table {
   width: 100%;
   text-align: left;
+  border-spacing: 0;
   background: var(--app-color-background);
   color: var(--app-color-foreground);
+  box-shadow: var(--app-size-shadow);
 }
 .table tr {
   margin: 0;
   padding: 0;
-}
-.table th {
-  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid var(--app-color-background-shade);
+  height: 48px;
 }
 .table th, .table td {
-  padding: 0.5rem;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  border: none;
   border-bottom: 1px solid var(--app-color-background-shade);
 }
+.table thead tr {
+  height: 56px;
+}
 .table thead th {
-  border-bottom: 1px solid var(--app-color-foreground);
+  font-size: 0.75rem;
+  color: var(--app-color-medium);
+  font-weight: normal;
+}
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+.table tbody th {
+  font-weight: normal;
 }

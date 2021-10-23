@@ -1,20 +1,35 @@
 .table-foreground {
   width: 100%;
   text-align: left;
+  border-spacing: 0;
   background: var(--app-color-foreground);
   color: var(--app-color-foreground-contrast);
+  box-shadow: var(--app-size-shadow);
 }
 .table-foreground tr {
   margin: 0;
   padding: 0;
-}
-.table-foreground th {
-  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid var(--app-color-foreground-shade);
+  height: 48px;
 }
 .table-foreground th, .table-foreground td {
-  padding: 0.5rem;
-  border-bottom: 1px solid var(--app-color-foreground-tint);
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  border: none;
+  border-bottom: 1px solid var(--app-color-foreground-shade);
+}
+.table-foreground thead tr {
+  height: 56px;
 }
 .table-foreground thead th {
-  border-bottom: 1px solid var(--app-color-foreground-shade);
+  font-size: 0.75rem;
+  color: rgba(var(--app-color-foreground-contrast-rgb), 0.5);
+  font-weight: normal;
+}
+.table-foreground tbody tr:last-child {
+  border-bottom: none;
+}
+.table-foreground tbody th {
+  font-weight: normal;
 }
